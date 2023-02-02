@@ -1,0 +1,1807 @@
+Script started on 2023-02-02 10:07:56+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="131" LINES="26"]
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~[00m$ git clone D[Kgit@github.com:rodr[Kelanu/p[Kprpa[K[K[K[KPRA[KPA-Practicas.git /[KDocumentos/PRPA-Practicas [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004lClonando en 'Documentos/PRPA-Practicas'...
+remote: Enumerating objects: 10, done.[K
+remote: Counting objects:  10% (1/10)[Kremote: Counting objects:  20% (2/10)[Kremote: Counting objects:  30% (3/10)[Kremote: Counting objects:  40% (4/10)[Kremote: Counting objects:  50% (5/10)[Kremote: Counting objects:  60% (6/10)[Kremote: Counting objects:  70% (7/10)[Kremote: Counting objects:  80% (8/10)[Kremote: Counting objects:  90% (9/10)[Kremote: Counting objects: 100% (10/10)[Kremote: Counting objects: 100% (10/10), done.[K
+remote: Compressing objects:  16% (1/6)[Kremote: Compressing objects:  33% (2/6)[Kremote: Compressing objects:  50% (3/6)[Kremote: Compressing objects:  66% (4/6)[Kremote: Compressing objects:  83% (5/6)[Kremote: Compressing objects: 100% (6/6)[Kremote: Compressing objects: 100% (6/6), done.[K
+Recibiendo objetos:  10% (1/10)Recibiendo objetos:  20% (2/10)Recibiendo objetos:  30% (3/10)Recibiendo objetos:  40% (4/10)Recibiendo objetos:  50% (5/10)Recibiendo objetos:  60% (6/10)Recibiendo objetos:  70% (7/10)Recibiendo objetos:  80% (8/10)Recibiendo objetos:  90% (9/10)Recibiendo objetos: 100% (10/10)Recibiendo objetos: 100% (10/10), listo.
+remote: Total 10 (delta 0), reused 3 (delta 0), pack-reused 0[K
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~[00m$ cd Docuemn[K[K[Kmentos/PRPA-Practicas
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git p[K[K[K[K[Kemcas[K[K[Kacs 0_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ mkdir multiprocessing
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ mv 0_procesos.py multiprocessing/0_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git add process[K[K[K[K[K[K[K0_r[Kprocesos.py
+[?2004lfatal: ruta especificada '0_procesos.py' no concordó con ningún archivo
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ c[Kgit add multiprocessing/0_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git commit -m "0_procesos.py"
+[?2004l[main c85c7b8] 0_procesos.py
+ 1 file changed, 21 insertions(+)
+ create mode 100644 multiprocessing/0_procesos.py
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git push
+[?2004lEnumerando objetos: 5, listo.
+Contando objetos:  20% (1/5)Contando objetos:  40% (2/5)Contando objetos:  60% (3/5)Contando objetos:  80% (4/5)Contando objetos: 100% (5/5)Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  33% (1/3)Comprimiendo objetos:  66% (2/3)Comprimiendo objetos: 100% (3/3)Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  25% (1/4)Escribiendo objetos:  50% (2/4)Escribiendo objetos:  75% (3/4)Escribiendo objetos: 100% (4/4)Escribiendo objetos: 100% (4/4), 554 bytes | 554.00 KiB/s, listo.
+Total 4 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:rodelanu/PRPA-Practicas.git
+   9df66e9..c85c7b8  main -> main
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ python3
+[?2004lPython 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from time t[Kimport sleep
+>>> from random import random
+>>> from multiprocessing import Process
+>>> def f():
+... for[K[K[K    for i in rango[Ke(5)[K):
+...             print("hola",i)
+...             sleep(random())
+... 
+>>> d[Kif __name__ == "__main__":
+...     p = Process(target=f)
+...     q = Process(target=f)
+...     p.start()
+...     q.start()
+...     print ("fin"))[K
+... 
+fin
+>>> hola 0
+hola 0
+hola 1
+hola 2
+hola 1
+hola 2
+hola 3
+hola 3
+hola 4
+hola 4
+
+KeyboardInterrupt
+>>> 
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ emacs 2_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git add [K[K[K[K[K[K[K[Kmv 2_procesos.py multiprocessing/2_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git add multiprocessing/2_processo.[K[K[Kos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git commi -m "2_prcoes[K[K[K[Kocesos.py"[C[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[main 2df3b73] 2_procesos.py
+ 1 file changed, 26 insertions(+)
+ create mode 100644 multiprocessing/2_procesos.py
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ git push
+[?2004lEnumerando objetos: 6, listo.
+Contando objetos:  16% (1/6)Contando objetos:  33% (2/6)Contando objetos:  50% (3/6)Contando objetos:  66% (4/6)Contando objetos:  83% (5/6)Contando objetos: 100% (6/6)Contando objetos: 100% (6/6), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  25% (1/4)Comprimiendo objetos:  50% (2/4)Comprimiendo objetos:  75% (3/4)Comprimiendo objetos: 100% (4/4)Comprimiendo objetos: 100% (4/4), listo.
+Escribiendo objetos:  25% (1/4)Escribiendo objetos:  50% (2/4)Escribiendo objetos:  75% (3/4)Escribiendo objetos: 100% (4/4)Escribiendo objetos: 100% (4/4), 641 bytes | 641.00 KiB/s, listo.
+Total 4 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:rodelanu/PRPA-Practicas.git
+   c85c7b8..2df3b73  main -> main
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas[00m$ cd multiprocessing/
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ emc[Kacs 3_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 3_procesos.py
+[?2004l  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/3_procesos.py", line 18
+    c = Value(’i’, 0)
+              ^
+SyntaxError: invalid character '’' (U+2019)
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 3_procesos.py[2Pemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ emacs 3_procesos.py[2@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lValor inicial del contador 0
+hola soy 6302, vuelta: 0, contador: 0
+hola soy 6303, vuelta: 0, contador: 0
+hola soy 6304, vuelta: 0, contador: 0
+hola soy 6305, vuelta: 0, contador: 0
+hola soy 6306, vuelta: 0, contador: 0
+hola soy 6307, vuelta: 0, contador: 0
+hola soy 6308, vuelta: 0, contador: 0
+hola soy 6309, vuelta: 0, contador: 0
+hola soy 6302, vuelta: 1, contador: 1
+hola soy 6303, vuelta: 1, contador: 1
+hola soy 6304, vuelta: 1, contador: 1
+hola soy 6305, vuelta: 1, contador: 1
+hola soy 6306, vuelta: 1, contador: 1
+hola soy 6307, vuelta: 1, contador: 1
+hola soy 6308, vuelta: 1, contador: 1
+hola soy 6309, vuelta: 1, contador: 1
+hola soy 6302, vuelta: 2, contador: 2
+hola soy 6303, vuelta: 2, contador: 2
+hola soy 6304, vuelta: 2, contador: 2
+hola soy 6305, vuelta: 2, contador: 2
+hola soy 6306, vuelta: 2, contador: 2
+hola soy 6307, vuelta: 2, contador: 2
+hola soy 6309, vuelta: 2, contador: 2
+hola soy 6308, vuelta: 2, contador: 2
+hola soy 6302, vuelta: 3, contador: 3
+hola soy 6303, vuelta: 3, contador: 3
+hola soy 6304, vuelta: 3, contador: 3
+hola soy 6305, vuelta: 3, contador: 3
+hola soy 6306, vuelta: 3, contador: 3
+hola soy 6307, vuelta: 3, contador: 3
+hola soy 6309, vuelta: 3, contador: 3
+hola soy 6308, vuelta: 3, contador: 3
+hola soy 6302, vuelta: 4, contador: 4
+hola soy 6303, vuelta: 4, contador: 4
+hola soy 6304, vuelta: 4, contador: 4
+hola soy 6305, vuelta: 4, contador: 4
+hola soy 6306, vuelta: 4, contador: 4
+hola soy 6307, vuelta: 4, contador: 4
+hola soy 6308, vuelta: 4, contador: 4
+hola soy 6309, vuelta: 4, contador: 4
+hola soy 6302, vuelta: 5, contador: 5
+hola soy 6303, vuelta: 5, contador: 5
+hola soy 6304, vuelta: 5, contador: 5
+hola soy 6305, vuelta: 5, contador: 5
+hola soy 6306, vuelta: 5, contador: 5
+hola soy 6307, vuelta: 5, contador: 5
+hola soy 6308, vuelta: 5, contador: 5
+hola soy 6309, vuelta: 5, contador: 5
+hola soy 6302, vuelta: 6, contador: 6
+hola soy 6303, vuelta: 6, contador: 6
+hola soy 6304, vuelta: 6, contador: 6
+hola soy 6305, vuelta: 6, contador: 6
+hola soy 6306, vuelta: 6, contador: 6
+hola soy 6307, vuelta: 6, contador: 6
+hola soy 6308, vuelta: 6, contador: 6
+hola soy 6309, vuelta: 6, contador: 6
+hola soy 6302, vuelta: 7, contador: 7
+hola soy 6303, vuelta: 7, contador: 7
+hola soy 6304, vuelta: 7, contador: 7
+hola soy 6305, vuelta: 7, contador: 7
+hola soy 6306, vuelta: 7, contador: 7
+hola soy 6307, vuelta: 7, contador: 7
+hola soy 6308, vuelta: 7, contador: 7
+hola soy 6309, vuelta: 7, contador: 7
+hola soy 6302, vuelta: 8, contador: 8
+hola soy 6303, vuelta: 8, contador: 8
+hola soy 6304, vuelta: 8, contador: 8
+hola soy 6305, vuelta: 8, contador: 8
+hola soy 6306, vuelta: 8, contador: 8
+hola soy 6307, vuelta: 8, contador: 8
+hola soy 6308, vuelta: 8, contador: 8
+hola soy 6309, vuelta: 8, contador: 8
+hola soy 6302, vuelta: 9, contador: 9
+hola soy 6303, vuelta: 9, contador: 9
+hola soy 6304, vuelta: 9, contador: 9
+hola soy 6305, vuelta: 9, contador: 9
+hola soy 6306, vuelta: 9, contador: 9
+hola soy 6307, vuelta: 9, contador: 9
+hola soy 6308, vuelta: 9, contador: 9
+hola soy 6309, vuelta: 9, contador: 9
+hola soy 6302, vuelta: 10, contador: 10
+hola soy 6303, vuelta: 10, contador: 10
+hola soy 6304, vuelta: 10, contador: 10
+hola soy 6305, vuelta: 10, contador: 10
+hola soy 6306, vuelta: 10, contador: 10
+hola soy 6307, vuelta: 10, contador: 10
+hola soy 6308, vuelta: 10, contador: 10
+hola soy 6309, vuelta: 10, contador: 10
+hola soy 6302, vuelta: 11, contador: 11
+hola soy 6303, vuelta: 11, contador: 11
+hola soy 6304, vuelta: 11, contador: 11
+hola soy 6305, vuelta: 11, contador: 11
+hola soy 6306, vuelta: 11, contador: 11
+hola soy 6307, vuelta: 11, contador: 11
+hola soy 6308, vuelta: 11, contador: 11
+hola soy 6309, vuelta: 11, contador: 11
+hola soy 6303, vuelta: 12, contador: 12
+hola soy 6302, vuelta: 12, contador: 12
+hola soy 6304, vuelta: 12, contador: 12
+hola soy 6306, vuelta: 12, contador: 12
+hola soy 6305, vuelta: 12, contador: 12
+hola soy 6307, vuelta: 12, contador: 12
+hola soy 6308, vuelta: 12, contador: 12
+hola soy 6309, vuelta: 12, contador: 12
+hola soy 6302, vuelta: 13, contador: 13
+hola soy 6303, vuelta: 13, contador: 13
+hola soy 6304, vuelta: 13, contador: 13
+hola soy 6306, vuelta: 13, contador: 13
+hola soy 6305, vuelta: 13, contador: 13
+hola soy 6307, vuelta: 13, contador: 13
+hola soy 6308, vuelta: 13, contador: 13
+hola soy 6309, vuelta: 13, contador: 13
+hola soy 6302, vuelta: 14, contador: 14
+hola soy 6303, vuelta: 14, contador: 14
+hola soy 6304, vuelta: 14, contador: 14
+hola soy 6306, vuelta: 14, contador: 14
+hola soy 6305, vuelta: 14, contador: 14
+hola soy 6307, vuelta: 14, contador: 14
+hola soy 6308, vuelta: 14, contador: 14
+hola soy 6309, vuelta: 14, contador: 14
+hola soy 6302, vuelta: 15, contador: 15
+hola soy 6303, vuelta: 15, contador: 15
+hola soy 6304, vuelta: 15, contador: 15
+hola soy 6306, vuelta: 15, contador: 15
+hola soy 6305, vuelta: 15, contador: 15
+hola soy 6307, vuelta: 15, contador: 15
+hola soy 6308, vuelta: 15, contador: 15
+hola soy 6309, vuelta: 15, contador: 15
+hola soy 6302, vuelta: 16, contador: 16
+hola soy 6303, vuelta: 16, contador: 16
+hola soy 6306, vuelta: 16, contador: 16
+hola soy 6304, vuelta: 16, contador: 16
+hola soy 6305, vuelta: 16, contador: 16
+hola soy 6307, vuelta: 16, contador: 16
+hola soy 6308, vuelta: 16, contador: 16
+hola soy 6309, vuelta: 16, contador: 16
+hola soy 6302, vuelta: 17, contador: 17
+hola soy 6303, vuelta: 17, contador: 17
+hola soy 6304, vuelta: 17, contador: 17
+hola soy 6306, vuelta: 17, contador: 17
+hola soy 6305, vuelta: 17, contador: 17
+hola soy 6307, vuelta: 17, contador: 17
+hola soy 6308, vuelta: 17, contador: 17
+hola soy 6309, vuelta: 17, contador: 17
+hola soy 6303, vuelta: 18, contador: 18
+hola soy 6302, vuelta: 18, contador: 18
+hola soy 6305, vuelta: 18, contador: 18
+hola soy 6306, vuelta: 18, contador: 18
+hola soy 6304, vuelta: 18, contador: 18
+hola soy 6307, vuelta: 18, contador: 18
+hola soy 6309, vuelta: 18, contador: 18
+hola soy 6308, vuelta: 18, contador: 18
+hola soy 6303, vuelta: 19, contador: 19
+hola soy 6302, vuelta: 19, contador: 19
+hola soy 6306, vuelta: 19, contador: 19
+hola soy 6307, vuelta: 19, contador: 19
+hola soy 6304, vuelta: 19, contador: 19
+hola soy 6305, vuelta: 19, contador: 19
+hola soy 6308, vuelta: 19, contador: 19
+hola soy 6309, vuelta: 19, contador: 19
+hola soy 6303, vuelta: 20, contador: 20
+hola soy 6302, vuelta: 20, contador: 20
+hola soy 6304, vuelta: 20, contador: 20
+hola soy 6306, vuelta: 20, contador: 20
+hola soy 6305, vuelta: 20, contador: 20
+hola soy 6307, vuelta: 20, contador: 20
+hola soy 6308, vuelta: 20, contador: 20
+hola soy 6309, vuelta: 20, contador: 20
+hola soy 6303, vuelta: 21, contador: 21
+hola soy 6302, vuelta: 21, contador: 21
+hola soy 6306, vuelta: 21, contador: 21
+hola soy 6305, vuelta: 21, contador: 21
+hola soy 6304, vuelta: 21, contador: 21
+hola soy 6307, vuelta: 21, contador: 21
+hola soy 6309, vuelta: 21, contador: 21
+hola soy 6308, vuelta: 21, contador: 21
+hola soy 6303, vuelta: 22, contador: 22
+hola soy 6302, vuelta: 22, contador: 22
+hola soy 6306, vuelta: 22, contador: 22
+hola soy 6307, vuelta: 22, contador: 22
+hola soy 6304, vuelta: 22, contador: 22
+hola soy 6305, vuelta: 22, contador: 22
+hola soy 6308, vuelta: 22, contador: 22
+hola soy 6309, vuelta: 22, contador: 22
+hola soy 6302, vuelta: 23, contador: 23
+hola soy 6303, vuelta: 23, contador: 23
+hola soy 6306, vuelta: 23, contador: 23
+hola soy 6304, vuelta: 23, contador: 23
+hola soy 6307, vuelta: 23, contador: 23
+hola soy 6305, vuelta: 23, contador: 23
+hola soy 6308, vuelta: 23, contador: 23
+hola soy 6309, vuelta: 23, contador: 23
+hola soy 6302, vuelta: 24, contador: 24
+hola soy 6303, vuelta: 24, contador: 24
+hola soy 6306, vuelta: 24, contador: 24
+hola soy 6307, vuelta: 24, contador: 24
+hola soy 6304, vuelta: 24, contador: 24
+hola soy 6305, vuelta: 24, contador: 24
+hola soy 6308, vuelta: 24, contador: 24
+hola soy 6309, vuelta: 24, contador: 24
+hola soy 6302, vuelta: 25, contador: 25
+hola soy 6303, vuelta: 25, contador: 25
+hola soy 6304, vuelta: 25, contador: 25
+hola soy 6307, vuelta: 25, contador: 25
+hola soy 6306, vuelta: 25, contador: 25
+hola soy 6305, vuelta: 25, contador: 25
+hola soy 6309, vuelta: 25, contador: 25
+hola soy 6308, vuelta: 25, contador: 25
+hola soy 6302, vuelta: 26, contador: 26
+hola soy 6303, vuelta: 26, contador: 26
+hola soy 6306, vuelta: 26, contador: 26
+hola soy 6304, vuelta: 26, contador: 26
+hola soy 6307, vuelta: 26, contador: 26
+hola soy 6305, vuelta: 26, contador: 26
+hola soy 6309, vuelta: 26, contador: 26
+hola soy 6308, vuelta: 26, contador: 26
+hola soy 6302, vuelta: 27, contador: 27
+hola soy 6303, vuelta: 27, contador: 27
+hola soy 6306, vuelta: 27, contador: 27
+hola soy 6305, vuelta: 27, contador: 27
+hola soy 6307, vuelta: 27, contador: 27
+hola soy 6304, vuelta: 27, contador: 27
+hola soy 6309, vuelta: 27, contador: 27
+hola soy 6308, vuelta: 27, contador: 27
+hola soy 6302, vuelta: 28, contador: 28
+hola soy 6303, vuelta: 28, contador: 28
+hola soy 6306, vuelta: 28, contador: 28
+hola soy 6305, vuelta: 28, contador: 28
+hola soy 6307, vuelta: 28, contador: 28
+hola soy 6304, vuelta: 28, contador: 28
+hola soy 6308, vuelta: 28, contador: 28
+hola soy 6309, vuelta: 28, contador: 28
+hola soy 6302, vuelta: 29, contador: 29
+hola soy 6303, vuelta: 29, contador: 29
+hola soy 6306, vuelta: 29, contador: 29
+hola soy 6307, vuelta: 29, contador: 29
+hola soy 6304, vuelta: 29, contador: 29
+hola soy 6305, vuelta: 29, contador: 29
+hola soy 6309, vuelta: 29, contador: 29
+hola soy 6308, vuelta: 29, contador: 29
+hola soy 6302, vuelta: 30, contador: 30
+hola soy 6303, vuelta: 30, contador: 30
+hola soy 6306, vuelta: 30, contador: 30
+hola soy 6305, vuelta: 30, contador: 30
+hola soy 6304, vuelta: 30, contador: 30
+hola soy 6307, vuelta: 30, contador: 30
+hola soy 6308, vuelta: 30, contador: 30
+hola soy 6309, vuelta: 30, contador: 30
+hola soy 6303, vuelta: 31, contador: 31
+hola soy 6302, vuelta: 31, contador: 31
+hola soy 6306, vuelta: 31, contador: 31
+hola soy 6305, vuelta: 31, contador: 31
+hola soy 6307, vuelta: 31, contador: 31
+hola soy 6304, vuelta: 31, contador: 31
+hola soy 6309, vuelta: 31, contador: 31
+hola soy 6308, vuelta: 31, contador: 31
+hola soy 6303, vuelta: 32, contador: 32
+hola soy 6302, vuelta: 32, contador: 32
+hola soy 6305, vuelta: 32, contador: 32
+hola soy 6306, vuelta: 32, contador: 32
+hola soy 6307, vuelta: 32, contador: 32
+hola soy 6304, vuelta: 32, contador: 32
+hola soy 6309, vuelta: 32, contador: 32
+hola soy 6308, vuelta: 32, contador: 32
+hola soy 6303, vuelta: 33, contador: 33
+hola soy 6302, vuelta: 33, contador: 33
+hola soy 6306, vuelta: 33, contador: 33
+hola soy 6307, vuelta: 33, contador: 33
+hola soy 6305, vuelta: 33, contador: 33
+hola soy 6304, vuelta: 33, contador: 33
+hola soy 6309, vuelta: 33, contador: 33
+hola soy 6308, vuelta: 33, contador: 33
+hola soy 6303, vuelta: 34, contador: 34
+hola soy 6302, vuelta: 34, contador: 34
+hola soy 6307, vuelta: 34, contador: 34
+hola soy 6306, vuelta: 34, contador: 34
+hola soy 6304, vuelta: 34, contador: 34
+hola soy 6305, vuelta: 34, contador: 34
+hola soy 6308, vuelta: 34, contador: 34
+hola soy 6309, vuelta: 34, contador: 34
+hola soy 6303, vuelta: 35, contador: 35
+hola soy 6302, vuelta: 35, contador: 35
+hola soy 6306, vuelta: 35, contador: 35
+hola soy 6305, vuelta: 35, contador: 35
+hola soy 6307, vuelta: 35, contador: 35
+hola soy 6304, vuelta: 35, contador: 35
+hola soy 6308, vuelta: 35, contador: 35
+hola soy 6309, vuelta: 35, contador: 35
+hola soy 6302, vuelta: 36, contador: 36
+hola soy 6303, vuelta: 36, contador: 36
+hola soy 6305, vuelta: 36, contador: 36
+hola soy 6306, vuelta: 36, contador: 36
+hola soy 6304, vuelta: 36, contador: 36
+hola soy 6307, vuelta: 36, contador: 36
+hola soy 6308, vuelta: 36, contador: 36
+hola soy 6309, vuelta: 36, contador: 36
+hola soy 6302, vuelta: 37, contador: 37
+hola soy 6303, vuelta: 37, contador: 37
+hola soy 6305, vuelta: 37, contador: 37
+hola soy 6306, vuelta: 37, contador: 37
+hola soy 6304, vuelta: 37, contador: 37
+hola soy 6307, vuelta: 37, contador: 37
+hola soy 6308, vuelta: 37, contador: 37
+hola soy 6309, vuelta: 37, contador: 37
+hola soy 6302, vuelta: 38, contador: 38
+hola soy 6303, vuelta: 38, contador: 38
+hola soy 6306, vuelta: 38, contador: 38
+hola soy 6305, vuelta: 38, contador: 38
+hola soy 6307, vuelta: 38, contador: 38
+hola soy 6304, vuelta: 38, contador: 38
+hola soy 6309, vuelta: 38, contador: 38
+hola soy 6308, vuelta: 38, contador: 38
+hola soy 6303, vuelta: 39, contador: 39
+hola soy 6302, vuelta: 39, contador: 39
+hola soy 6306, vuelta: 39, contador: 39
+hola soy 6305, vuelta: 39, contador: 39
+hola soy 6304, vuelta: 39, contador: 39
+hola soy 6307, vuelta: 39, contador: 39
+hola soy 6309, vuelta: 39, contador: 39
+hola soy 6308, vuelta: 39, contador: 39
+hola soy 6303, vuelta: 40, contador: 40
+hola soy 6302, vuelta: 40, contador: 40
+hola soy 6305, vuelta: 40, contador: 40
+hola soy 6306, vuelta: 40, contador: 40
+hola soy 6307, vuelta: 40, contador: 40
+hola soy 6304, vuelta: 40, contador: 40
+hola soy 6309, vuelta: 40, contador: 40
+hola soy 6308, vuelta: 40, contador: 40
+hola soy 6303, vuelta: 41, contador: 41
+hola soy 6302, vuelta: 41, contador: 41
+hola soy 6305, vuelta: 41, contador: 41
+hola soy 6306, vuelta: 41, contador: 41
+hola soy 6304, vuelta: 41, contador: 41
+hola soy 6307, vuelta: 41, contador: 41
+hola soy 6309, vuelta: 41, contador: 41
+hola soy 6308, vuelta: 41, contador: 41
+hola soy 6303, vuelta: 42, contador: 42
+hola soy 6302, vuelta: 42, contador: 42
+hola soy 6306, vuelta: 42, contador: 42
+hola soy 6305, vuelta: 42, contador: 42
+hola soy 6307, vuelta: 42, contador: 42
+hola soy 6304, vuelta: 42, contador: 42
+hola soy 6309, vuelta: 42, contador: 42
+hola soy 6308, vuelta: 42, contador: 42
+hola soy 6302, vuelta: 43, contador: 43
+hola soy 6303, vuelta: 43, contador: 43
+hola soy 6306, vuelta: 43, contador: 43
+hola soy 6305, vuelta: 43, contador: 43
+hola soy 6304, vuelta: 43, contador: 43
+hola soy 6307, vuelta: 43, contador: 43
+hola soy 6309, vuelta: 43, contador: 43
+hola soy 6308, vuelta: 43, contador: 43
+hola soy 6303, vuelta: 44, contador: 44
+hola soy 6302, vuelta: 44, contador: 44
+hola soy 6306, vuelta: 44, contador: 44
+hola soy 6305, vuelta: 44, contador: 44
+hola soy 6304, vuelta: 44, contador: 44
+hola soy 6307, vuelta: 44, contador: 44
+hola soy 6308, vuelta: 44, contador: 44
+hola soy 6309, vuelta: 44, contador: 44
+hola soy 6302, vuelta: 45, contador: 45
+hola soy 6303, vuelta: 45, contador: 45
+hola soy 6305, vuelta: 45, contador: 45
+hola soy 6306, vuelta: 45, contador: 45
+hola soy 6307, vuelta: 45, contador: 45
+hola soy 6304, vuelta: 45, contador: 45
+hola soy 6308, vuelta: 45, contador: 45
+hola soy 6309, vuelta: 45, contador: 45
+hola soy 6303, vuelta: 46, contador: 46
+hola soy 6302, vuelta: 46, contador: 46
+hola soy 6306, vuelta: 46, contador: 46
+hola soy 6305, vuelta: 46, contador: 46
+hola soy 6304, vuelta: 46, contador: 46
+hola soy 6307, vuelta: 46, contador: 46
+hola soy 6309, vuelta: 46, contador: 46
+hola soy 6308, vuelta: 46, contador: 46
+hola soy 6303, vuelta: 47, contador: 47
+hola soy 6302, vuelta: 47, contador: 47
+hola soy 6306, vuelta: 47, contador: 47
+hola soy 6305, vuelta: 47, contador: 47
+hola soy 6307, vuelta: 47, contador: 47
+hola soy 6304, vuelta: 47, contador: 47
+hola soy 6309, vuelta: 47, contador: 47
+hola soy 6308, vuelta: 47, contador: 47
+hola soy 6302, vuelta: 48, contador: 48
+hola soy 6303, vuelta: 48, contador: 48
+hola soy 6305, vuelta: 48, contador: 48
+hola soy 6306, vuelta: 48, contador: 48
+hola soy 6304, vuelta: 48, contador: 48
+hola soy 6307, vuelta: 48, contador: 48
+hola soy 6309, vuelta: 48, contador: 48
+hola soy 6308, vuelta: 48, contador: 48
+hola soy 6303, vuelta: 49, contador: 49
+hola soy 6302, vuelta: 49, contador: 49
+hola soy 6306, vuelta: 49, contador: 49
+hola soy 6305, vuelta: 49, contador: 49
+hola soy 6304, vuelta: 49, contador: 49
+hola soy 6307, vuelta: 49, contador: 49
+hola soy 6308, vuelta: 49, contador: 49
+hola soy 6309, vuelta: 49, contador: 49
+hola soy 6303, vuelta: 50, contador: 50
+hola soy 6302, vuelta: 50, contador: 50
+hola soy 6306, vuelta: 50, contador: 50
+hola soy 6305, vuelta: 50, contador: 50
+hola soy 6307, vuelta: 50, contador: 50
+hola soy 6304, vuelta: 50, contador: 50
+hola soy 6308, vuelta: 50, contador: 50
+hola soy 6309, vuelta: 50, contador: 50
+hola soy 6303, vuelta: 51, contador: 51
+hola soy 6302, vuelta: 51, contador: 51
+hola soy 6306, vuelta: 51, contador: 51
+hola soy 6305, vuelta: 51, contador: 51
+hola soy 6304, vuelta: 51, contador: 51
+hola soy 6307, vuelta: 51, contador: 51
+hola soy 6309, vuelta: 51, contador: 51
+hola soy 6308, vuelta: 51, contador: 51
+hola soy 6303, vuelta: 52, contador: 52
+hola soy 6302, vuelta: 52, contador: 52
+hola soy 6305, vuelta: 52, contador: 52
+hola soy 6306, vuelta: 52, contador: 52
+hola soy 6307, vuelta: 52, contador: 52
+hola soy 6304, vuelta: 52, contador: 52
+hola soy 6309, vuelta: 52, contador: 52
+hola soy 6308, vuelta: 52, contador: 52
+hola soy 6302, vuelta: 53, contador: 53
+hola soy 6303, vuelta: 53, contador: 53
+hola soy 6305, vuelta: 53, contador: 53
+hola soy 6306, vuelta: 53, contador: 53
+hola soy 6304, vuelta: 53, contador: 53
+hola soy 6307, vuelta: 53, contador: 53
+hola soy 6309, vuelta: 53, contador: 53
+hola soy 6308, vuelta: 53, contador: 53
+hola soy 6302, vuelta: 54, contador: 54
+hola soy 6303, vuelta: 54, contador: 54
+hola soy 6305, vuelta: 54, contador: 54
+hola soy 6306, vuelta: 54, contador: 54
+hola soy 6307, vuelta: 54, contador: 54
+hola soy 6304, vuelta: 54, contador: 54
+hola soy 6308, vuelta: 54, contador: 54
+hola soy 6309, vuelta: 54, contador: 54
+hola soy 6302, vuelta: 55, contador: 55
+hola soy 6303, vuelta: 55, contador: 55
+hola soy 6304, vuelta: 55, contador: 55
+hola soy 6306, vuelta: 55, contador: 55
+hola soy 6305, vuelta: 55, contador: 55
+hola soy 6307, vuelta: 55, contador: 55
+hola soy 6308, vuelta: 55, contador: 55
+hola soy 6309, vuelta: 55, contador: 55
+hola soy 6303, vuelta: 56, contador: 56
+hola soy 6302, vuelta: 56, contador: 56
+hola soy 6306, vuelta: 56, contador: 56
+hola soy 6305, vuelta: 56, contador: 56
+hola soy 6304, vuelta: 56, contador: 56
+hola soy 6307, vuelta: 56, contador: 56
+hola soy 6309, vuelta: 56, contador: 56
+hola soy 6308, vuelta: 56, contador: 56
+hola soy 6303, vuelta: 57, contador: 57
+hola soy 6302, vuelta: 57, contador: 57
+hola soy 6306, vuelta: 57, contador: 57
+hola soy 6305, vuelta: 57, contador: 57
+hola soy 6307, vuelta: 57, contador: 57
+hola soy 6304, vuelta: 57, contador: 57
+hola soy 6308, vuelta: 57, contador: 57
+hola soy 6309, vuelta: 57, contador: 57
+hola soy 6303, vuelta: 58, contador: 58
+hola soy 6302, vuelta: 58, contador: 58
+hola soy 6306, vuelta: 58, contador: 58
+hola soy 6305, vuelta: 58, contador: 58
+hola soy 6304, vuelta: 58, contador: 58
+hola soy 6307, vuelta: 58, contador: 58
+hola soy 6309, vuelta: 58, contador: 58
+hola soy 6308, vuelta: 58, contador: 58
+hola soy 6303, vuelta: 59, contador: 59
+hola soy 6302, vuelta: 59, contador: 59
+hola soy 6306, vuelta: 59, contador: 59
+hola soy 6305, vuelta: 59, contador: 59
+hola soy 6304, vuelta: 59, contador: 59
+hola soy 6307, vuelta: 59, contador: 59
+hola soy 6308, vuelta: 59, contador: 59
+hola soy 6309, vuelta: 59, contador: 59
+hola soy 6303, vuelta: 60, contador: 60
+hola soy 6302, vuelta: 60, contador: 60
+hola soy 6306, vuelta: 60, contador: 60
+hola soy 6305, vuelta: 60, contador: 60
+hola soy 6307, vuelta: 60, contador: 60
+hola soy 6304, vuelta: 60, contador: 60
+hola soy 6309, vuelta: 60, contador: 60
+hola soy 6308, vuelta: 60, contador: 60
+hola soy 6303, vuelta: 61, contador: 61
+hola soy 6302, vuelta: 61, contador: 61
+hola soy 6306, vuelta: 61, contador: 61
+hola soy 6307, vuelta: 61, contador: 61
+hola soy 6304, vuelta: 61, contador: 61
+hola soy 6305, vuelta: 61, contador: 61
+hola soy 6308, vuelta: 61, contador: 61
+hola soy 6309, vuelta: 61, contador: 61
+hola soy 6303, vuelta: 62, contador: 62
+hola soy 6302, vuelta: 62, contador: 62
+hola soy 6305, vuelta: 62, contador: 62
+hola soy 6306, vuelta: 62, contador: 62
+hola soy 6304, vuelta: 62, contador: 62
+hola soy 6307, vuelta: 62, contador: 62
+hola soy 6308, vuelta: 62, contador: 62
+hola soy 6309, vuelta: 62, contador: 62
+hola soy 6303, vuelta: 63, contador: 63
+hola soy 6302, vuelta: 63, contador: 63
+hola soy 6306, vuelta: 63, contador: 63
+hola soy 6305, vuelta: 63, contador: 63
+hola soy 6307, vuelta: 63, contador: 63
+hola soy 6304, vuelta: 63, contador: 63
+hola soy 6308, vuelta: 63, contador: 63
+hola soy 6309, vuelta: 63, contador: 63
+hola soy 6303, vuelta: 64, contador: 64
+hola soy 6302, vuelta: 64, contador: 64
+hola soy 6305, vuelta: 64, contador: 64
+hola soy 6306, vuelta: 64, contador: 64
+hola soy 6307, vuelta: 64, contador: 64
+hola soy 6304, vuelta: 64, contador: 64
+hola soy 6309, vuelta: 64, contador: 64
+hola soy 6308, vuelta: 64, contador: 64
+hola soy 6303, vuelta: 65, contador: 65
+hola soy 6302, vuelta: 65, contador: 65
+hola soy 6306, vuelta: 65, contador: 65
+hola soy 6304, vuelta: 65, contador: 65
+hola soy 6305, vuelta: 65, contador: 65
+hola soy 6307, vuelta: 65, contador: 65
+hola soy 6309, vuelta: 65, contador: 65
+hola soy 6308, vuelta: 65, contador: 65
+hola soy 6303, vuelta: 66, contador: 66
+hola soy 6302, vuelta: 66, contador: 66
+hola soy 6305, vuelta: 66, contador: 66
+hola soy 6306, vuelta: 66, contador: 66
+hola soy 6307, vuelta: 66, contador: 66
+hola soy 6304, vuelta: 66, contador: 66
+hola soy 6308, vuelta: 66, contador: 66
+hola soy 6309, vuelta: 66, contador: 66
+hola soy 6303, vuelta: 67, contador: 67
+hola soy 6302, vuelta: 67, contador: 67
+hola soy 6306, vuelta: 67, contador: 67
+hola soy 6305, vuelta: 67, contador: 67
+hola soy 6307, vuelta: 67, contador: 67
+hola soy 6304, vuelta: 67, contador: 67
+hola soy 6308, vuelta: 67, contador: 67
+hola soy 6309, vuelta: 67, contador: 67
+hola soy 6303, vuelta: 68, contador: 68
+hola soy 6302, vuelta: 68, contador: 68
+hola soy 6305, vuelta: 68, contador: 68
+hola soy 6306, vuelta: 68, contador: 68
+hola soy 6307, vuelta: 68, contador: 68
+hola soy 6304, vuelta: 68, contador: 68
+hola soy 6308, vuelta: 68, contador: 68
+hola soy 6309, vuelta: 68, contador: 68
+hola soy 6302, vuelta: 69, contador: 69
+hola soy 6303, vuelta: 69, contador: 69
+hola soy 6305, vuelta: 69, contador: 69
+hola soy 6306, vuelta: 69, contador: 69
+hola soy 6304, vuelta: 69, contador: 69
+hola soy 6307, vuelta: 69, contador: 69
+hola soy 6309, vuelta: 69, contador: 69
+hola soy 6308, vuelta: 69, contador: 69
+hola soy 6302, vuelta: 70, contador: 70
+hola soy 6303, vuelta: 70, contador: 70
+hola soy 6305, vuelta: 70, contador: 70
+hola soy 6306, vuelta: 70, contador: 70
+hola soy 6304, vuelta: 70, contador: 70
+hola soy 6307, vuelta: 70, contador: 70
+hola soy 6309, vuelta: 70, contador: 70
+hola soy 6308, vuelta: 70, contador: 70
+hola soy 6303, vuelta: 71, contador: 71
+hola soy 6302, vuelta: 71, contador: 71
+hola soy 6304, vuelta: 71, contador: 71
+hola soy 6306, vuelta: 71, contador: 71
+hola soy 6307, vuelta: 71, contador: 71
+hola soy 6305, vuelta: 71, contador: 71
+hola soy 6309, vuelta: 71, contador: 71
+hola soy 6308, vuelta: 71, contador: 71
+hola soy 6303, vuelta: 72, contador: 72
+hola soy 6302, vuelta: 72, contador: 72
+hola soy 6305, vuelta: 72, contador: 72
+hola soy 6304, vuelta: 72, contador: 72
+hola soy 6307, vuelta: 72, contador: 72
+hola soy 6306, vuelta: 72, contador: 72
+hola soy 6309, vuelta: 72, contador: 72
+hola soy 6308, vuelta: 72, contador: 72
+hola soy 6302, vuelta: 73, contador: 73
+hola soy 6303, vuelta: 73, contador: 73
+hola soy 6304, vuelta: 73, contador: 73
+hola soy 6306, vuelta: 73, contador: 73
+hola soy 6305, vuelta: 73, contador: 73
+hola soy 6307, vuelta: 73, contador: 73
+hola soy 6308, vuelta: 73, contador: 73
+hola soy 6309, vuelta: 73, contador: 73
+hola soy 6303, vuelta: 74, contador: 74
+hola soy 6302, vuelta: 74, contador: 74
+hola soy 6306, vuelta: 74, contador: 74
+hola soy 6305, vuelta: 74, contador: 74
+hola soy 6307, vuelta: 74, contador: 74
+hola soy 6304, vuelta: 74, contador: 74
+hola soy 6309, vuelta: 74, contador: 74
+hola soy 6308, vuelta: 74, contador: 74
+hola soy 6303, vuelta: 75, contador: 75
+hola soy 6302, vuelta: 75, contador: 75
+hola soy 6306, vuelta: 75, contador: 75
+hola soy 6305, vuelta: 75, contador: 75
+hola soy 6307, vuelta: 75, contador: 75
+hola soy 6304, vuelta: 75, contador: 75
+hola soy 6308, vuelta: 75, contador: 75
+hola soy 6309, vuelta: 75, contador: 75
+hola soy 6303, vuelta: 76, contador: 76
+hola soy 6302, vuelta: 76, contador: 76
+hola soy 6306, vuelta: 76, contador: 76
+hola soy 6305, vuelta: 76, contador: 76
+hola soy 6307, vuelta: 76, contador: 76
+hola soy 6304, vuelta: 76, contador: 76
+hola soy 6309, vuelta: 76, contador: 76
+hola soy 6308, vuelta: 76, contador: 76
+hola soy 6303, vuelta: 77, contador: 77
+hola soy 6302, vuelta: 77, contador: 77
+hola soy 6306, vuelta: 77, contador: 77
+hola soy 6305, vuelta: 77, contador: 77
+hola soy 6307, vuelta: 77, contador: 77
+hola soy 6304, vuelta: 77, contador: 77
+hola soy 6309, vuelta: 77, contador: 77
+hola soy 6308, vuelta: 77, contador: 77
+hola soy 6302, vuelta: 78, contador: 78
+hola soy 6303, vuelta: 78, contador: 78
+hola soy 6305, vuelta: 78, contador: 78
+hola soy 6306, vuelta: 78, contador: 78
+hola soy 6307, vuelta: 78, contador: 78
+hola soy 6304, vuelta: 78, contador: 78
+hola soy 6309, vuelta: 78, contador: 78
+hola soy 6308, vuelta: 78, contador: 78
+hola soy 6302, vuelta: 79, contador: 79
+hola soy 6303, vuelta: 79, contador: 79
+hola soy 6307, vuelta: 79, contador: 79
+hola soy 6305, vuelta: 79, contador: 79
+hola soy 6304, vuelta: 79, contador: 79
+hola soy 6306, vuelta: 79, contador: 79
+hola soy 6308, vuelta: 79, contador: 79
+hola soy 6309, vuelta: 79, contador: 79
+hola soy 6303, vuelta: 80, contador: 80
+hola soy 6302, vuelta: 80, contador: 80
+hola soy 6307, vuelta: 80, contador: 80
+hola soy 6305, vuelta: 80, contador: 80
+hola soy 6304, vuelta: 80, contador: 80
+hola soy 6306, vuelta: 80, contador: 80
+hola soy 6309, vuelta: 80, contador: 80
+hola soy 6308, vuelta: 80, contador: 80
+hola soy 6303, vuelta: 81, contador: 81
+hola soy 6302, vuelta: 81, contador: 81
+hola soy 6307, vuelta: 81, contador: 81
+hola soy 6305, vuelta: 81, contador: 81
+hola soy 6306, vuelta: 81, contador: 81
+hola soy 6304, vuelta: 81, contador: 81
+hola soy 6309, vuelta: 81, contador: 81
+hola soy 6308, vuelta: 81, contador: 81
+hola soy 6302, vuelta: 82, contador: 82
+hola soy 6303, vuelta: 82, contador: 82
+hola soy 6305, vuelta: 82, contador: 82
+hola soy 6304, vuelta: 82, contador: 82
+hola soy 6307, vuelta: 82, contador: 82
+hola soy 6306, vuelta: 82, contador: 82
+hola soy 6309, vuelta: 82, contador: 82
+hola soy 6308, vuelta: 82, contador: 82
+hola soy 6302, vuelta: 83, contador: 83
+hola soy 6303, vuelta: 83, contador: 83
+hola soy 6304, vuelta: 83, contador: 83
+hola soy 6307, vuelta: 83, contador: 83
+hola soy 6305, vuelta: 83, contador: 83
+hola soy 6306, vuelta: 83, contador: 83
+hola soy 6308, vuelta: 83, contador: 83
+hola soy 6309, vuelta: 83, contador: 83
+hola soy 6303, vuelta: 84, contador: 84
+hola soy 6302, vuelta: 84, contador: 84
+hola soy 6306, vuelta: 84, contador: 84
+hola soy 6304, vuelta: 84, contador: 84
+hola soy 6307, vuelta: 84, contador: 84
+hola soy 6305, vuelta: 84, contador: 84
+hola soy 6308, vuelta: 84, contador: 84
+hola soy 6309, vuelta: 84, contador: 84
+hola soy 6302, vuelta: 85, contador: 85
+hola soy 6303, vuelta: 85, contador: 85
+hola soy 6306, vuelta: 85, contador: 85
+hola soy 6305, vuelta: 85, contador: 85
+hola soy 6304, vuelta: 85, contador: 85
+hola soy 6307, vuelta: 85, contador: 85
+hola soy 6308, vuelta: 85, contador: 85
+hola soy 6309, vuelta: 85, contador: 85
+hola soy 6303, vuelta: 86, contador: 86
+hola soy 6302, vuelta: 86, contador: 86
+hola soy 6305, vuelta: 86, contador: 86
+hola soy 6306, vuelta: 86, contador: 86
+hola soy 6307, vuelta: 86, contador: 86
+hola soy 6304, vuelta: 86, contador: 86
+hola soy 6308, vuelta: 86, contador: 86
+hola soy 6309, vuelta: 86, contador: 86
+hola soy 6302, vuelta: 87, contador: 87
+hola soy 6303, vuelta: 87, contador: 87
+hola soy 6305, vuelta: 87, contador: 87
+hola soy 6306, vuelta: 87, contador: 87
+hola soy 6307, vuelta: 87, contador: 87
+hola soy 6304, vuelta: 87, contador: 87
+hola soy 6309, vuelta: 87, contador: 87
+hola soy 6308, vuelta: 87, contador: 87
+hola soy 6302, vuelta: 88, contador: 88
+hola soy 6303, vuelta: 88, contador: 88
+hola soy 6305, vuelta: 88, contador: 88
+hola soy 6306, vuelta: 88, contador: 88
+hola soy 6307, vuelta: 88, contador: 88
+hola soy 6304, vuelta: 88, contador: 88
+hola soy 6308, vuelta: 88, contador: 88
+hola soy 6309, vuelta: 88, contador: 88
+hola soy 6303, vuelta: 89, contador: 89
+hola soy 6302, vuelta: 89, contador: 89
+hola soy 6305, vuelta: 89, contador: 89
+hola soy 6306, vuelta: 89, contador: 89
+hola soy 6307, vuelta: 89, contador: 89
+hola soy 6304, vuelta: 89, contador: 89
+hola soy 6308, vuelta: 89, contador: 89
+hola soy 6309, vuelta: 89, contador: 89
+hola soy 6303, vuelta: 90, contador: 90
+hola soy 6302, vuelta: 90, contador: 90
+hola soy 6305, vuelta: 90, contador: 90
+hola soy 6306, vuelta: 90, contador: 90
+hola soy 6307, vuelta: 90, contador: 90
+hola soy 6304, vuelta: 90, contador: 90
+hola soy 6309, vuelta: 90, contador: 90
+hola soy 6308, vuelta: 90, contador: 90
+hola soy 6302, vuelta: 91, contador: 91
+hola soy 6303, vuelta: 91, contador: 91
+hola soy 6305, vuelta: 91, contador: 91
+hola soy 6306, vuelta: 91, contador: 91
+hola soy 6304, vuelta: 91, contador: 91
+hola soy 6307, vuelta: 91, contador: 91
+hola soy 6309, vuelta: 91, contador: 91
+hola soy 6308, vuelta: 91, contador: 91
+hola soy 6303, vuelta: 92, contador: 92
+hola soy 6302, vuelta: 92, contador: 92
+hola soy 6305, vuelta: 92, contador: 92
+hola soy 6306, vuelta: 92, contador: 92
+hola soy 6304, vuelta: 92, contador: 92
+hola soy 6307, vuelta: 92, contador: 92
+hola soy 6308, vuelta: 92, contador: 92
+hola soy 6309, vuelta: 92, contador: 92
+hola soy 6303, vuelta: 93, contador: 93
+hola soy 6302, vuelta: 93, contador: 93
+hola soy 6305, vuelta: 93, contador: 93
+hola soy 6306, vuelta: 93, contador: 93
+hola soy 6307, vuelta: 93, contador: 93
+hola soy 6304, vuelta: 93, contador: 93
+hola soy 6309, vuelta: 93, contador: 93
+hola soy 6308, vuelta: 93, contador: 93
+hola soy 6303, vuelta: 94, contador: 94
+hola soy 6302, vuelta: 94, contador: 94
+hola soy 6305, vuelta: 94, contador: 94
+hola soy 6306, vuelta: 94, contador: 94
+hola soy 6304, vuelta: 94, contador: 94
+hola soy 6307, vuelta: 94, contador: 94
+hola soy 6309, vuelta: 94, contador: 94
+hola soy 6308, vuelta: 94, contador: 94
+hola soy 6305, vuelta: 95, contador: 95
+hola soy 6303, vuelta: 95, contador: 95
+hola soy 6302, vuelta: 95, contador: 95
+hola soy 6306, vuelta: 95, contador: 95
+hola soy 6307, vuelta: 95, contador: 95
+hola soy 6304, vuelta: 95, contador: 95
+hola soy 6309, vuelta: 95, contador: 95
+hola soy 6308, vuelta: 95, contador: 95
+hola soy 6303, vuelta: 96, contador: 96
+hola soy 6305, vuelta: 96, contador: 96
+hola soy 6302, vuelta: 96, contador: 96
+hola soy 6306, vuelta: 96, contador: 96
+hola soy 6304, vuelta: 96, contador: 96
+hola soy 6307, vuelta: 96, contador: 96
+hola soy 6308, vuelta: 96, contador: 96
+hola soy 6309, vuelta: 96, contador: 96
+hola soy 6303, vuelta: 97, contador: 97
+hola soy 6306, vuelta: 97, contador: 97
+hola soy 6305, vuelta: 97, contador: 97
+hola soy 6302, vuelta: 97, contador: 97
+hola soy 6304, vuelta: 97, contador: 97
+hola soy 6307, vuelta: 97, contador: 97
+hola soy 6308, vuelta: 97, contador: 97
+hola soy 6309, vuelta: 97, contador: 97
+hola soy 6303, vuelta: 98, contador: 98
+hola soy 6307, vuelta: 98, contador: 98
+hola soy 6306, vuelta: 98, contador: 98
+hola soy 6304, vuelta: 98, contador: 98
+hola soy 6302, vuelta: 98, contador: 98
+hola soy 6305, vuelta: 98, contador: 98
+hola soy 6309, vuelta: 98, contador: 98
+hola soy 6308, vuelta: 98, contador: 98
+hola soy 6302, vuelta: 99, contador: 99
+hola soy 6307, vuelta: 99, contador: 99
+hola soy 6304, vuelta: 99, contador: 99
+hola soy 6303, vuelta: 99, contador: 99
+hola soy 6306, vuelta: 99, contador: 99
+hola soy 6305, vuelta: 99, contador: 99
+hola soy 6309, vuelta: 99, contador: 99
+hola soy 6308, vuelta: 99, contador: 99
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ emacs 4_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 4_procesos.py
+[?2004lValor inicial del contador 0
+hola soy 6795, vuelta: 0, contador: 1
+hola soy 6795, vuelta: 1, contador: 2
+hola soy 6795, vuelta: 2, contador: 3
+hola soy 6795, vuelta: 3, contador: 4
+hola soy 6795, vuelta: 4, contador: 5
+hola soy 6795, vuelta: 5, contador: 6
+hola soy 6795, vuelta: 6, contador: 7
+hola soy 6795, vuelta: 7, contador: 8
+hola soy 6795, vuelta: 8, contador: 9
+hola soy 6795, vuelta: 9, contador: 10
+hola soy 6795, vuelta: 10, contador: 11
+hola soy 6795, vuelta: 11, contador: 12
+hola soy 6795, vuelta: 12, contador: 13
+hola soy 6795, vuelta: 13, contador: 14
+hola soy 6795, vuelta: 14, contador: 15
+hola soy 6795, vuelta: 15, contador: 16
+hola soy 6795, vuelta: 16, contador: 17
+hola soy 6795, vuelta: 17, contador: 18
+hola soy 6795, vuelta: 18, contador: 19
+hola soy 6795, vuelta: 19, contador: 20
+hola soy 6795, vuelta: 20, contador: 21
+hola soy 6795, vuelta: 21, contador: 22
+hola soy 6795, vuelta: 22, contador: 23
+hola soy 6795, vuelta: 23, contador: 24
+hola soy 6795, vuelta: 24, contador: 25
+hola soy 6795, vuelta: 25, contador: 26
+hola soy 6795, vuelta: 26, contador: 27
+hola soy 6795, vuelta: 27, contador: 28
+hola soy 6795, vuelta: 28, contador: 29
+hola soy 6795, vuelta: 29, contador: 30
+hola soy 6795, vuelta: 30, contador: 31
+hola soy 6795, vuelta: 31, contador: 32
+hola soy 6795, vuelta: 32, contador: 33
+hola soy 6795, vuelta: 33, contador: 34
+hola soy 6795, vuelta: 34, contador: 35
+hola soy 6795, vuelta: 35, contador: 36
+hola soy 6795, vuelta: 36, contador: 37
+hola soy 6795, vuelta: 37, contador: 38
+hola soy 6795, vuelta: 38, contador: 39
+hola soy 6795, vuelta: 39, contador: 40
+hola soy 6795, vuelta: 40, contador: 41
+hola soy 6795, vuelta: 41, contador: 42
+hola soy 6795, vuelta: 42, contador: 43
+hola soy 6795, vuelta: 43, contador: 44
+hola soy 6795, vuelta: 44, contador: 45
+hola soy 6795, vuelta: 45, contador: 46
+hola soy 6795, vuelta: 46, contador: 47
+hola soy 6795, vuelta: 47, contador: 48
+hola soy 6795, vuelta: 48, contador: 49
+hola soy 6795, vuelta: 49, contador: 50
+hola soy 6795, vuelta: 50, contador: 51
+hola soy 6795, vuelta: 51, contador: 52
+hola soy 6795, vuelta: 52, contador: 53
+hola soy 6795, vuelta: 53, contador: 54
+hola soy 6795, vuelta: 54, contador: 55
+hola soy 6795, vuelta: 55, contador: 56
+hola soy 6795, vuelta: 56, contador: 57
+hola soy 6795, vuelta: 57, contador: 58
+hola soy 6795, vuelta: 58, contador: 59
+hola soy 6795, vuelta: 59, contador: 60
+hola soy 6795, vuelta: 60, contador: 61
+hola soy 6795, vuelta: 61, contador: 62
+hola soy 6795, vuelta: 62, contador: 63
+hola soy 6795, vuelta: 63, contador: 64
+hola soy 6795, vuelta: 64, contador: 65
+hola soy 6795, vuelta: 65, contador: 66
+hola soy 6795, vuelta: 66, contador: 67
+hola soy 6795, vuelta: 67, contador: 68
+hola soy 6795, vuelta: 68, contador: 69
+hola soy 6795, vuelta: 69, contador: 70
+hola soy 6795, vuelta: 70, contador: 71
+hola soy 6795, vuelta: 71, contador: 72
+hola soy 6795, vuelta: 72, contador: 73
+hola soy 6795, vuelta: 73, contador: 74
+hola soy 6795, vuelta: 74, contador: 75
+hola soy 6795, vuelta: 75, contador: 76
+hola soy 6795, vuelta: 76, contador: 77
+hola soy 6795, vuelta: 77, contador: 78
+hola soy 6795, vuelta: 78, contador: 79
+hola soy 6795, vuelta: 79, contador: 80
+hola soy 6795, vuelta: 80, contador: 81
+hola soy 6795, vuelta: 81, contador: 82
+hola soy 6795, vuelta: 82, contador: 84
+hola soy 6795, vuelta: 83, contador: 85
+hola soy 6795, vuelta: 84, contador: 86
+hola soy 6795, vuelta: 85, contador: 87
+hola soy 6796, vuelta: 0, contador: 84
+hola soy 6795, vuelta: 86, contador: 88
+hola soy 6796, vuelta: 1, contador: 90
+hola soy 6795, vuelta: 87, contador: 90
+hola soy 6795, vuelta: 88, contador: 92
+hola soy 6796, vuelta: 2, contador: 92
+hola soy 6795, vuelta: 89, contador: 93
+hola soy 6796, vuelta: 3, contador: 94
+hola soy 6795, vuelta: 90, contador: 95
+hola soy 6796, vuelta: 4, contador: 96
+hola soy 6795, vuelta: 91, contador: 97
+hola soy 6796, vuelta: 5, contador: 98
+hola soy 6796, vuelta: 6, contador: 100
+hola soy 6795, vuelta: 92, contador: 100
+hola soy 6796, vuelta: 7, contador: 101
+hola soy 6795, vuelta: 93, contador: 102
+hola soy 6796, vuelta: 8, contador: 103
+hola soy 6796, vuelta: 9, contador: 105
+hola soy 6795, vuelta: 94, contador: 105
+hola soy 6796, vuelta: 10, contador: 106
+hola soy 6795, vuelta: 95, contador: 107
+hola soy 6796, vuelta: 11, contador: 108
+hola soy 6796, vuelta: 12, contador: 110
+hola soy 6795, vuelta: 96, contador: 110
+hola soy 6796, vuelta: 13, contador: 111
+hola soy 6795, vuelta: 97, contador: 112
+hola soy 6796, vuelta: 14, contador: 113
+hola soy 6795, vuelta: 98, contador: 114
+hola soy 6796, vuelta: 15, contador: 115
+hola soy 6796, vuelta: 16, contador: 117
+hola soy 6795, vuelta: 99, contador: 117
+hola soy 6796, vuelta: 17, contador: 118
+hola soy 6796, vuelta: 18, contador: 119
+hola soy 6796, vuelta: 19, contador: 120
+hola soy 6796, vuelta: 20, contador: 121
+hola soy 6796, vuelta: 21, contador: 122
+hola soy 6796, vuelta: 22, contador: 123
+hola soy 6796, vuelta: 23, contador: 124
+hola soy 6796, vuelta: 24, contador: 125
+hola soy 6796, vuelta: 25, contador: 126
+hola soy 6796, vuelta: 26, contador: 127
+hola soy 6796, vuelta: 27, contador: 128
+hola soy 6796, vuelta: 28, contador: 129
+hola soy 6796, vuelta: 29, contador: 130
+hola soy 6796, vuelta: 30, contador: 131
+hola soy 6796, vuelta: 31, contador: 132
+hola soy 6796, vuelta: 32, contador: 133
+hola soy 6796, vuelta: 33, contador: 134
+hola soy 6796, vuelta: 34, contador: 135
+hola soy 6796, vuelta: 35, contador: 136
+hola soy 6796, vuelta: 36, contador: 137
+hola soy 6796, vuelta: 37, contador: 138
+hola soy 6796, vuelta: 38, contador: 139
+hola soy 6796, vuelta: 39, contador: 140
+hola soy 6796, vuelta: 40, contador: 141
+hola soy 6796, vuelta: 41, contador: 142
+hola soy 6796, vuelta: 42, contador: 143
+hola soy 6796, vuelta: 43, contador: 144
+hola soy 6796, vuelta: 44, contador: 145
+hola soy 6796, vuelta: 45, contador: 146
+hola soy 6796, vuelta: 46, contador: 147
+hola soy 6796, vuelta: 47, contador: 148
+hola soy 6796, vuelta: 48, contador: 149
+hola soy 6796, vuelta: 49, contador: 150
+hola soy 6796, vuelta: 50, contador: 151
+hola soy 6796, vuelta: 51, contador: 152
+hola soy 6796, vuelta: 52, contador: 153
+hola soy 6796, vuelta: 53, contador: 154
+hola soy 6796, vuelta: 54, contador: 155
+hola soy 6796, vuelta: 55, contador: 156
+hola soy 6796, vuelta: 56, contador: 157
+hola soy 6796, vuelta: 57, contador: 158
+hola soy 6796, vuelta: 58, contador: 159
+hola soy 6796, vuelta: 59, contador: 160
+hola soy 6796, vuelta: 60, contador: 161
+hola soy 6796, vuelta: 61, contador: 162
+hola soy 6796, vuelta: 62, contador: 163
+hola soy 6796, vuelta: 63, contador: 164
+hola soy 6796, vuelta: 64, contador: 165
+hola soy 6796, vuelta: 65, contador: 166
+hola soy 6796, vuelta: 66, contador: 167
+hola soy 6796, vuelta: 67, contador: 168
+hola soy 6796, vuelta: 68, contador: 169
+hola soy 6796, vuelta: 69, contador: 170
+hola soy 6796, vuelta: 70, contador: 171
+hola soy 6796, vuelta: 71, contador: 172
+hola soy 6796, vuelta: 72, contador: 174
+hola soy 6796, vuelta: 73, contador: 175
+hola soy 6797, vuelta: 0, contador: 174
+hola soy 6796, vuelta: 74, contador: 176
+hola soy 6796, vuelta: 75, contador: 177
+hola soy 6797, vuelta: 1, contador: 177
+hola soy 6796, vuelta: 76, contador: 177
+hola soy 6797, vuelta: 2, contador: 179
+hola soy 6796, vuelta: 77, contador: 179
+hola soy 6797, vuelta: 3, contador: 180
+hola soy 6796, vuelta: 78, contador: 181
+hola soy 6797, vuelta: 4, contador: 182
+hola soy 6796, vuelta: 79, contador: 183
+hola soy 6797, vuelta: 5, contador: 184
+hola soy 6796, vuelta: 80, contador: 186
+hola soy 6797, vuelta: 6, contador: 186
+hola soy 6796, vuelta: 81, contador: 188
+hola soy 6797, vuelta: 7, contador: 188
+hola soy 6796, vuelta: 82, contador: 189
+hola soy 6797, vuelta: 8, contador: 190
+hola soy 6796, vuelta: 83, contador: 191
+hola soy 6797, vuelta: 9, contador: 192
+hola soy 6796, vuelta: 84, contador: 193
+hola soy 6797, vuelta: 10, contador: 194
+hola soy 6796, vuelta: 85, contador: 195
+hola soy 6797, vuelta: 11, contador: 196
+hola soy 6796, vuelta: 86, contador: 197
+hola soy 6797, vuelta: 12, contador: 198
+hola soy 6796, vuelta: 87, contador: 199
+hola soy 6797, vuelta: 13, contador: 200
+hola soy 6796, vuelta: 88, contador: 201
+hola soy 6797, vuelta: 14, contador: 202
+hola soy 6796, vuelta: 89, contador: 204
+hola soy 6797, vuelta: 15, contador: 204
+hola soy 6796, vuelta: 90, contador: 206
+hola soy 6797, vuelta: 16, contador: 206
+hola soy 6797, vuelta: 17, contador: 208
+hola soy 6796, vuelta: 91, contador: 208
+hola soy 6797, vuelta: 18, contador: 210
+hola soy 6796, vuelta: 92, contador: 210
+hola soy 6797, vuelta: 19, contador: 212
+hola soy 6796, vuelta: 93, contador: 212
+hola soy 6796, vuelta: 94, contador: 213
+hola soy 6797, vuelta: 20, contador: 213
+hola soy 6796, vuelta: 95, contador: 214
+hola soy 6797, vuelta: 21, contador: 214
+hola soy 6796, vuelta: 96, contador: 216
+hola soy 6797, vuelta: 22, contador: 216
+hola soy 6796, vuelta: 97, contador: 217
+hola soy 6797, vuelta: 23, contador: 217
+hola soy 6796, vuelta: 98, contador: 219
+hola soy 6797, vuelta: 24, contador: 219
+hola soy 6796, vuelta: 99, contador: 220
+hola soy 6797, vuelta: 25, contador: 220
+hola soy 6797, vuelta: 26, contador: 221
+hola soy 6797, vuelta: 27, contador: 222
+hola soy 6797, vuelta: 28, contador: 223
+hola soy 6797, vuelta: 29, contador: 224
+hola soy 6797, vuelta: 30, contador: 225
+hola soy 6797, vuelta: 31, contador: 226
+hola soy 6797, vuelta: 32, contador: 227
+hola soy 6797, vuelta: 33, contador: 228
+hola soy 6797, vuelta: 34, contador: 229
+hola soy 6797, vuelta: 35, contador: 230
+hola soy 6797, vuelta: 36, contador: 231
+hola soy 6797, vuelta: 37, contador: 232
+hola soy 6797, vuelta: 38, contador: 233
+hola soy 6797, vuelta: 39, contador: 234
+hola soy 6797, vuelta: 40, contador: 235
+hola soy 6797, vuelta: 41, contador: 236
+hola soy 6797, vuelta: 42, contador: 237
+hola soy 6797, vuelta: 43, contador: 238
+hola soy 6797, vuelta: 44, contador: 239
+hola soy 6797, vuelta: 45, contador: 240
+hola soy 6797, vuelta: 46, contador: 241
+hola soy 6797, vuelta: 47, contador: 242
+hola soy 6797, vuelta: 48, contador: 243
+hola soy 6797, vuelta: 49, contador: 244
+hola soy 6797, vuelta: 50, contador: 245
+hola soy 6797, vuelta: 51, contador: 246
+hola soy 6797, vuelta: 52, contador: 247
+hola soy 6797, vuelta: 53, contador: 248
+hola soy 6797, vuelta: 54, contador: 249
+hola soy 6797, vuelta: 55, contador: 250
+hola soy 6797, vuelta: 56, contador: 251
+hola soy 6797, vuelta: 57, contador: 252
+hola soy 6797, vuelta: 58, contador: 253
+hola soy 6797, vuelta: 59, contador: 254
+hola soy 6797, vuelta: 60, contador: 255
+hola soy 6797, vuelta: 61, contador: 256
+hola soy 6797, vuelta: 62, contador: 257
+hola soy 6797, vuelta: 63, contador: 258
+hola soy 6797, vuelta: 64, contador: 259
+hola soy 6797, vuelta: 65, contador: 260
+hola soy 6797, vuelta: 66, contador: 261
+hola soy 6797, vuelta: 67, contador: 262
+hola soy 6797, vuelta: 68, contador: 263
+hola soy 6797, vuelta: 69, contador: 264
+hola soy 6797, vuelta: 70, contador: 265
+hola soy 6797, vuelta: 71, contador: 266
+hola soy 6797, vuelta: 72, contador: 267
+hola soy 6797, vuelta: 73, contador: 268
+hola soy 6797, vuelta: 74, contador: 269
+hola soy 6797, vuelta: 75, contador: 270
+hola soy 6797, vuelta: 76, contador: 271
+hola soy 6797, vuelta: 77, contador: 272
+hola soy 6797, vuelta: 78, contador: 273
+hola soy 6797, vuelta: 79, contador: 274
+hola soy 6797, vuelta: 80, contador: 275
+hola soy 6797, vuelta: 81, contador: 276
+hola soy 6797, vuelta: 82, contador: 277
+hola soy 6797, vuelta: 83, contador: 278
+hola soy 6797, vuelta: 84, contador: 279
+hola soy 6797, vuelta: 85, contador: 280
+hola soy 6797, vuelta: 86, contador: 281
+hola soy 6797, vuelta: 87, contador: 282
+hola soy 6797, vuelta: 88, contador: 283
+hola soy 6797, vuelta: 89, contador: 284
+hola soy 6797, vuelta: 90, contador: 285
+hola soy 6797, vuelta: 91, contador: 286
+hola soy 6797, vuelta: 92, contador: 287
+hola soy 6797, vuelta: 93, contador: 288
+hola soy 6797, vuelta: 94, contador: 289
+hola soy 6797, vuelta: 95, contador: 290
+hola soy 6797, vuelta: 96, contador: 291
+hola soy 6797, vuelta: 97, contador: 292
+hola soy 6797, vuelta: 98, contador: 293
+hola soy 6797, vuelta: 99, contador: 294
+hola soy 6799, vuelta: 0, contador: 295
+hola soy 6799, vuelta: 1, contador: 296
+hola soy 6799, vuelta: 2, contador: 297
+hola soy 6799, vuelta: 3, contador: 298
+hola soy 6799, vuelta: 4, contador: 299
+hola soy 6799, vuelta: 5, contador: 300
+hola soy 6799, vuelta: 6, contador: 301
+hola soy 6799, vuelta: 7, contador: 302
+hola soy 6799, vuelta: 8, contador: 303
+hola soy 6799, vuelta: 9, contador: 304
+hola soy 6799, vuelta: 10, contador: 305
+hola soy 6799, vuelta: 11, contador: 306
+hola soy 6799, vuelta: 12, contador: 307
+hola soy 6799, vuelta: 13, contador: 308
+hola soy 6799, vuelta: 14, contador: 309
+hola soy 6799, vuelta: 15, contador: 310
+hola soy 6799, vuelta: 16, contador: 311
+hola soy 6799, vuelta: 17, contador: 312
+hola soy 6799, vuelta: 18, contador: 313
+hola soy 6799, vuelta: 19, contador: 314
+hola soy 6799, vuelta: 20, contador: 315
+hola soy 6799, vuelta: 21, contador: 316
+hola soy 6799, vuelta: 22, contador: 317
+hola soy 6798, vuelta: 0, contador: 314
+hola soy 6799, vuelta: 23, contador: 318
+hola soy 6799, vuelta: 24, contador: 319
+hola soy 6798, vuelta: 1, contador: 319
+hola soy 6799, vuelta: 25, contador: 320
+hola soy 6798, vuelta: 2, contador: 321
+hola soy 6799, vuelta: 26, contador: 322
+hola soy 6798, vuelta: 3, contador: 323
+hola soy 6799, vuelta: 27, contador: 324
+hola soy 6798, vuelta: 4, contador: 325
+hola soy 6799, vuelta: 28, contador: 326
+hola soy 6798, vuelta: 5, contador: 327
+hola soy 6799, vuelta: 29, contador: 328
+hola soy 6799, vuelta: 30, contador: 329
+hola soy 6798, vuelta: 6, contador: 329
+hola soy 6799, vuelta: 31, contador: 330
+hola soy 6798, vuelta: 7, contador: 331
+hola soy 6799, vuelta: 32, contador: 332
+hola soy 6798, vuelta: 8, contador: 333
+hola soy 6799, vuelta: 33, contador: 334
+hola soy 6798, vuelta: 9, contador: 335
+hola soy 6799, vuelta: 34, contador: 336
+hola soy 6798, vuelta: 10, contador: 338
+hola soy 6799, vuelta: 35, contador: 338
+hola soy 6798, vuelta: 11, contador: 340
+hola soy 6799, vuelta: 36, contador: 340
+hola soy 6798, vuelta: 12, contador: 342
+hola soy 6799, vuelta: 37, contador: 342
+hola soy 6798, vuelta: 13, contador: 343
+hola soy 6799, vuelta: 38, contador: 343
+hola soy 6798, vuelta: 14, contador: 344
+hola soy 6799, vuelta: 39, contador: 344
+hola soy 6798, vuelta: 15, contador: 346
+hola soy 6799, vuelta: 40, contador: 346
+hola soy 6798, vuelta: 16, contador: 347
+hola soy 6799, vuelta: 41, contador: 347
+hola soy 6798, vuelta: 17, contador: 349
+hola soy 6799, vuelta: 42, contador: 349
+hola soy 6798, vuelta: 18, contador: 351
+hola soy 6799, vuelta: 43, contador: 351
+hola soy 6798, vuelta: 19, contador: 353
+hola soy 6799, vuelta: 44, contador: 353
+hola soy 6798, vuelta: 20, contador: 355
+hola soy 6799, vuelta: 45, contador: 355
+hola soy 6798, vuelta: 21, contador: 357
+hola soy 6799, vuelta: 46, contador: 357
+hola soy 6798, vuelta: 22, contador: 358
+hola soy 6799, vuelta: 47, contador: 358
+hola soy 6799, vuelta: 48, contador: 359
+hola soy 6798, vuelta: 23, contador: 359
+hola soy 6799, vuelta: 49, contador: 361
+hola soy 6798, vuelta: 24, contador: 361
+hola soy 6799, vuelta: 50, contador: 363
+hola soy 6798, vuelta: 25, contador: 363
+hola soy 6799, vuelta: 51, contador: 364
+hola soy 6798, vuelta: 26, contador: 365
+hola soy 6799, vuelta: 52, contador: 366
+hola soy 6798, vuelta: 27, contador: 367
+hola soy 6799, vuelta: 53, contador: 368
+hola soy 6798, vuelta: 28, contador: 369
+hola soy 6799, vuelta: 54, contador: 370
+hola soy 6798, vuelta: 29, contador: 371
+hola soy 6799, vuelta: 55, contador: 372
+hola soy 6798, vuelta: 30, contador: 373
+hola soy 6799, vuelta: 56, contador: 374
+hola soy 6798, vuelta: 31, contador: 375
+hola soy 6799, vuelta: 57, contador: 376
+hola soy 6798, vuelta: 32, contador: 377
+hola soy 6799, vuelta: 58, contador: 378
+hola soy 6798, vuelta: 33, contador: 379
+hola soy 6799, vuelta: 59, contador: 380
+hola soy 6798, vuelta: 34, contador: 381
+hola soy 6799, vuelta: 60, contador: 381
+hola soy 6798, vuelta: 35, contador: 383
+hola soy 6799, vuelta: 61, contador: 383
+hola soy 6798, vuelta: 36, contador: 385
+hola soy 6799, vuelta: 62, contador: 385
+hola soy 6798, vuelta: 37, contador: 386
+hola soy 6799, vuelta: 63, contador: 387
+hola soy 6798, vuelta: 38, contador: 388
+hola soy 6799, vuelta: 64, contador: 389
+hola soy 6798, vuelta: 39, contador: 390
+hola soy 6799, vuelta: 65, contador: 391
+hola soy 6798, vuelta: 40, contador: 392
+hola soy 6799, vuelta: 66, contador: 393
+hola soy 6798, vuelta: 41, contador: 394
+hola soy 6799, vuelta: 67, contador: 395
+hola soy 6798, vuelta: 42, contador: 396
+hola soy 6799, vuelta: 68, contador: 397
+hola soy 6798, vuelta: 43, contador: 398
+hola soy 6799, vuelta: 69, contador: 399
+hola soy 6798, vuelta: 44, contador: 400
+hola soy 6799, vuelta: 70, contador: 401
+hola soy 6798, vuelta: 45, contador: 402
+hola soy 6799, vuelta: 71, contador: 403
+hola soy 6798, vuelta: 46, contador: 404
+hola soy 6799, vuelta: 72, contador: 406
+hola soy 6798, vuelta: 47, contador: 406
+hola soy 6799, vuelta: 73, contador: 408
+hola soy 6798, vuelta: 48, contador: 408
+hola soy 6799, vuelta: 74, contador: 410
+hola soy 6798, vuelta: 49, contador: 410
+hola soy 6799, vuelta: 75, contador: 412
+hola soy 6798, vuelta: 50, contador: 412
+hola soy 6799, vuelta: 76, contador: 414
+hola soy 6798, vuelta: 51, contador: 414
+hola soy 6799, vuelta: 77, contador: 416
+hola soy 6798, vuelta: 52, contador: 416
+hola soy 6799, vuelta: 78, contador: 418
+hola soy 6798, vuelta: 53, contador: 418
+hola soy 6799, vuelta: 79, contador: 420
+hola soy 6798, vuelta: 54, contador: 420
+hola soy 6799, vuelta: 80, contador: 422
+hola soy 6798, vuelta: 55, contador: 422
+hola soy 6799, vuelta: 81, contador: 424
+hola soy 6798, vuelta: 56, contador: 424
+hola soy 6798, vuelta: 57, contador: 426
+hola soy 6799, vuelta: 82, contador: 426
+hola soy 6798, vuelta: 58, contador: 428
+hola soy 6799, vuelta: 83, contador: 429
+hola soy 6798, vuelta: 59, contador: 430
+hola soy 6799, vuelta: 84, contador: 432
+hola soy 6798, vuelta: 60, contador: 432
+hola soy 6799, vuelta: 85, contador: 434
+hola soy 6800, vuelta: 0, contador: 429
+hola soy 6798, vuelta: 61, contador: 434
+hola soy 6799, vuelta: 86, contador: 435
+hola soy 6798, vuelta: 62, contador: 437
+hola soy 6799, vuelta: 87, contador: 437
+hola soy 6800, vuelta: 1, contador: 437
+hola soy 6798, vuelta: 63, contador: 439
+hola soy 6799, vuelta: 88, contador: 440
+hola soy 6800, vuelta: 2, contador: 440
+hola soy 6799, vuelta: 89, contador: 443
+hola soy 6800, vuelta: 3, contador: 443
+hola soy 6798, vuelta: 64, contador: 443
+hola soy 6799, vuelta: 90, contador: 445
+hola soy 6800, vuelta: 4, contador: 445
+hola soy 6798, vuelta: 65, contador: 446
+hola soy 6799, vuelta: 91, contador: 447
+hola soy 6800, vuelta: 5, contador: 449
+hola soy 6798, vuelta: 66, contador: 449
+hola soy 6799, vuelta: 92, contador: 450
+hola soy 6800, vuelta: 6, contador: 451
+hola soy 6798, vuelta: 67, contador: 451
+hola soy 6799, vuelta: 93, contador: 452
+hola soy 6798, vuelta: 68, contador: 454
+hola soy 6798, vuelta: 69, contador: 455
+hola soy 6799, vuelta: 94, contador: 455
+hola soy 6800, vuelta: 7, contador: 455
+hola soy 6798, vuelta: 70, contador: 456
+hola soy 6800, vuelta: 8, contador: 456
+hola soy 6798, vuelta: 71, contador: 458
+hola soy 6800, vuelta: 9, contador: 459
+hola soy 6799, vuelta: 95, contador: 459
+hola soy 6798, vuelta: 72, contador: 460
+hola soy 6800, vuelta: 10, contador: 461
+hola soy 6798, vuelta: 73, contador: 462
+hola soy 6800, vuelta: 11, contador: 463
+hola soy 6799, vuelta: 96, contador: 463
+hola soy 6798, vuelta: 74, contador: 463
+hola soy 6800, vuelta: 12, contador: 465
+hola soy 6799, vuelta: 97, contador: 465
+hola soy 6798, vuelta: 75, contador: 466
+hola soy 6800, vuelta: 13, contador: 468
+hola soy 6799, vuelta: 98, contador: 468
+hola soy 6800, vuelta: 14, contador: 470
+hola soy 6798, vuelta: 76, contador: 469
+hola soy 6800, vuelta: 15, contador: 471
+hola soy 6800, vuelta: 16, contador: 472
+hola soy 6798, vuelta: 77, contador: 472
+hola soy 6799, vuelta: 99, contador: 472
+hola soy 6800, vuelta: 17, contador: 474
+hola soy 6798, vuelta: 78, contador: 474
+hola soy 6800, vuelta: 18, contador: 475
+hola soy 6798, vuelta: 79, contador: 476
+hola soy 6800, vuelta: 19, contador: 477
+hola soy 6798, vuelta: 80, contador: 478
+hola soy 6800, vuelta: 20, contador: 479
+hola soy 6798, vuelta: 81, contador: 480
+hola soy 6800, vuelta: 21, contador: 481
+hola soy 6798, vuelta: 82, contador: 482
+hola soy 6800, vuelta: 22, contador: 483
+hola soy 6798, vuelta: 83, contador: 484
+hola soy 6800, vuelta: 23, contador: 485
+hola soy 6798, vuelta: 84, contador: 486
+hola soy 6800, vuelta: 24, contador: 487
+hola soy 6798, vuelta: 85, contador: 488
+hola soy 6800, vuelta: 25, contador: 490
+hola soy 6798, vuelta: 86, contador: 490
+hola soy 6800, vuelta: 26, contador: 492
+hola soy 6798, vuelta: 87, contador: 492
+hola soy 6800, vuelta: 27, contador: 494
+hola soy 6798, vuelta: 88, contador: 494
+hola soy 6800, vuelta: 28, contador: 496
+hola soy 6798, vuelta: 89, contador: 496
+hola soy 6800, vuelta: 29, contador: 498
+hola soy 6798, vuelta: 90, contador: 498
+hola soy 6800, vuelta: 30, contador: 500
+hola soy 6798, vuelta: 91, contador: 500
+hola soy 6800, vuelta: 31, contador: 502
+hola soy 6798, vuelta: 92, contador: 502
+hola soy 6800, vuelta: 32, contador: 504
+hola soy 6798, vuelta: 93, contador: 504
+hola soy 6800, vuelta: 33, contador: 506
+hola soy 6798, vuelta: 94, contador: 506
+hola soy 6800, vuelta: 34, contador: 508
+hola soy 6798, vuelta: 95, contador: 508
+hola soy 6800, vuelta: 35, contador: 510
+hola soy 6798, vuelta: 96, contador: 510
+hola soy 6800, vuelta: 36, contador: 512
+hola soy 6798, vuelta: 97, contador: 512
+hola soy 6800, vuelta: 37, contador: 514
+hola soy 6798, vuelta: 98, contador: 514
+hola soy 6800, vuelta: 38, contador: 516
+hola soy 6798, vuelta: 99, contador: 516
+hola soy 6800, vuelta: 39, contador: 517
+hola soy 6800, vuelta: 40, contador: 518
+hola soy 6800, vuelta: 41, contador: 519
+hola soy 6800, vuelta: 42, contador: 520
+hola soy 6800, vuelta: 43, contador: 521
+hola soy 6800, vuelta: 44, contador: 522
+hola soy 6800, vuelta: 45, contador: 523
+hola soy 6800, vuelta: 46, contador: 524
+hola soy 6800, vuelta: 47, contador: 525
+hola soy 6800, vuelta: 48, contador: 526
+hola soy 6800, vuelta: 49, contador: 527
+hola soy 6800, vuelta: 50, contador: 528
+hola soy 6800, vuelta: 51, contador: 529
+hola soy 6800, vuelta: 52, contador: 530
+hola soy 6800, vuelta: 53, contador: 531
+hola soy 6800, vuelta: 54, contador: 532
+hola soy 6800, vuelta: 55, contador: 533
+hola soy 6800, vuelta: 56, contador: 534
+hola soy 6800, vuelta: 57, contador: 535
+hola soy 6800, vuelta: 58, contador: 536
+hola soy 6800, vuelta: 59, contador: 537
+hola soy 6800, vuelta: 60, contador: 538
+hola soy 6800, vuelta: 61, contador: 540
+hola soy 6800, vuelta: 62, contador: 541
+hola soy 6800, vuelta: 63, contador: 542
+hola soy 6801, vuelta: 0, contador: 540
+hola soy 6800, vuelta: 64, contador: 543
+hola soy 6801, vuelta: 1, contador: 544
+hola soy 6801, vuelta: 2, contador: 546
+hola soy 6800, vuelta: 65, contador: 546
+hola soy 6801, vuelta: 3, contador: 547
+hola soy 6800, vuelta: 66, contador: 548
+hola soy 6801, vuelta: 4, contador: 549
+hola soy 6800, vuelta: 67, contador: 550
+hola soy 6801, vuelta: 5, contador: 550
+hola soy 6801, vuelta: 6, contador: 551
+hola soy 6800, vuelta: 68, contador: 551
+hola soy 6801, vuelta: 7, contador: 552
+hola soy 6800, vuelta: 69, contador: 553
+hola soy 6801, vuelta: 8, contador: 554
+hola soy 6801, vuelta: 9, contador: 555
+hola soy 6800, vuelta: 70, contador: 555
+hola soy 6801, vuelta: 10, contador: 556
+hola soy 6800, vuelta: 71, contador: 557
+hola soy 6801, vuelta: 11, contador: 559
+hola soy 6800, vuelta: 72, contador: 559
+hola soy 6801, vuelta: 12, contador: 561
+hola soy 6800, vuelta: 73, contador: 561
+hola soy 6800, vuelta: 74, contador: 563
+hola soy 6801, vuelta: 13, contador: 563
+hola soy 6800, vuelta: 75, contador: 564
+hola soy 6801, vuelta: 14, contador: 565
+hola soy 6800, vuelta: 76, contador: 566
+hola soy 6801, vuelta: 15, contador: 567
+hola soy 6801, vuelta: 16, contador: 568
+hola soy 6800, vuelta: 77, contador: 568
+hola soy 6801, vuelta: 17, contador: 569
+hola soy 6800, vuelta: 78, contador: 570
+hola soy 6801, vuelta: 18, contador: 571
+hola soy 6801, vuelta: 19, contador: 572
+hola soy 6800, vuelta: 79, contador: 572
+hola soy 6801, vuelta: 20, contador: 574
+hola soy 6800, vuelta: 80, contador: 574
+hola soy 6801, vuelta: 21, contador: 575
+hola soy 6800, vuelta: 81, contador: 576
+hola soy 6801, vuelta: 22, contador: 577
+hola soy 6800, vuelta: 82, contador: 579
+hola soy 6801, vuelta: 23, contador: 580
+hola soy 6800, vuelta: 83, contador: 581
+hola soy 6801, vuelta: 24, contador: 582
+hola soy 6800, vuelta: 84, contador: 583
+hola soy 6802, vuelta: 0, contador: 581
+hola soy 6800, vuelta: 85, contador: 585
+hola soy 6801, vuelta: 25, contador: 584
+hola soy 6800, vuelta: 86, contador: 586
+hola soy 6802, vuelta: 1, contador: 586
+hola soy 6801, vuelta: 26, contador: 588
+hola soy 6800, vuelta: 87, contador: 589
+hola soy 6802, vuelta: 2, contador: 589
+hola soy 6800, vuelta: 88, contador: 590
+hola soy 6802, vuelta: 3, contador: 591
+hola soy 6801, vuelta: 27, contador: 591
+hola soy 6802, vuelta: 4, contador: 593
+hola soy 6800, vuelta: 89, contador: 594
+hola soy 6801, vuelta: 28, contador: 594
+hola soy 6802, vuelta: 5, contador: 595
+hola soy 6801, vuelta: 29, contador: 596
+hola soy 6800, vuelta: 90, contador: 596
+hola soy 6802, vuelta: 6, contador: 598
+hola soy 6801, vuelta: 30, contador: 598
+hola soy 6802, vuelta: 7, contador: 600
+hola soy 6800, vuelta: 91, contador: 600
+hola soy 6801, vuelta: 31, contador: 602
+hola soy 6802, vuelta: 8, contador: 602
+hola soy 6801, vuelta: 32, contador: 605
+hola soy 6802, vuelta: 9, contador: 605
+hola soy 6800, vuelta: 92, contador: 605
+hola soy 6801, vuelta: 33, contador: 607
+hola soy 6802, vuelta: 10, contador: 607
+hola soy 6802, vuelta: 11, contador: 609
+hola soy 6800, vuelta: 93, contador: 609
+hola soy 6801, vuelta: 34, contador: 609
+hola soy 6802, vuelta: 12, contador: 610
+hola soy 6801, vuelta: 35, contador: 611
+hola soy 6800, vuelta: 94, contador: 611
+hola soy 6802, vuelta: 13, contador: 612
+hola soy 6801, vuelta: 36, contador: 614
+hola soy 6800, vuelta: 95, contador: 614
+hola soy 6802, vuelta: 14, contador: 616
+hola soy 6801, vuelta: 37, contador: 616
+hola soy 6802, vuelta: 15, contador: 618
+hola soy 6801, vuelta: 38, contador: 619
+hola soy 6800, vuelta: 96, contador: 619
+hola soy 6802, vuelta: 16, contador: 620
+hola soy 6802, vuelta: 17, contador: 622
+hola soy 6801, vuelta: 39, contador: 622
+hola soy 6800, vuelta: 97, contador: 622
+hola soy 6802, vuelta: 18, contador: 623
+hola soy 6802, vuelta: 19, contador: 625
+hola soy 6801, vuelta: 40, contador: 625
+hola soy 6800, vuelta: 98, contador: 625
+hola soy 6802, vuelta: 20, contador: 627
+hola soy 6801, vuelta: 41, contador: 627
+hola soy 6801, vuelta: 42, contador: 630
+hola soy 6800, vuelta: 99, contador: 629
+hola soy 6801, vuelta: 43, contador: 631
+hola soy 6802, vuelta: 21, contador: 631
+hola soy 6801, vuelta: 44, contador: 632
+hola soy 6802, vuelta: 22, contador: 633
+hola soy 6801, vuelta: 45, contador: 634
+hola soy 6802, vuelta: 23, contador: 634
+hola soy 6801, vuelta: 46, contador: 636
+hola soy 6802, vuelta: 24, contador: 636
+hola soy 6801, vuelta: 47, contador: 638
+hola soy 6802, vuelta: 25, contador: 638
+hola soy 6801, vuelta: 48, contador: 640
+hola soy 6802, vuelta: 26, contador: 640
+hola soy 6801, vuelta: 49, contador: 641
+hola soy 6802, vuelta: 27, contador: 642
+hola soy 6801, vuelta: 50, contador: 643
+hola soy 6802, vuelta: 28, contador: 645
+hola soy 6801, vuelta: 51, contador: 645
+hola soy 6802, vuelta: 29, contador: 646
+hola soy 6801, vuelta: 52, contador: 647
+hola soy 6802, vuelta: 30, contador: 648
+hola soy 6802, vuelta: 31, contador: 649
+hola soy 6801, vuelta: 53, contador: 649
+hola soy 6802, vuelta: 32, contador: 650
+hola soy 6801, vuelta: 54, contador: 651
+hola soy 6802, vuelta: 33, contador: 652
+hola soy 6801, vuelta: 55, contador: 653
+hola soy 6802, vuelta: 34, contador: 654
+hola soy 6801, vuelta: 56, contador: 655
+hola soy 6802, vuelta: 35, contador: 656
+hola soy 6801, vuelta: 57, contador: 657
+hola soy 6802, vuelta: 36, contador: 658
+hola soy 6801, vuelta: 58, contador: 659
+hola soy 6802, vuelta: 37, contador: 660
+hola soy 6801, vuelta: 59, contador: 661
+hola soy 6802, vuelta: 38, contador: 662
+hola soy 6801, vuelta: 60, contador: 664
+hola soy 6802, vuelta: 39, contador: 664
+hola soy 6801, vuelta: 61, contador: 666
+hola soy 6802, vuelta: 40, contador: 666
+hola soy 6801, vuelta: 62, contador: 668
+hola soy 6802, vuelta: 41, contador: 668
+hola soy 6801, vuelta: 63, contador: 670
+hola soy 6802, vuelta: 42, contador: 670
+hola soy 6801, vuelta: 64, contador: 672
+hola soy 6802, vuelta: 43, contador: 672
+hola soy 6801, vuelta: 65, contador: 674
+hola soy 6802, vuelta: 44, contador: 674
+hola soy 6801, vuelta: 66, contador: 676
+hola soy 6802, vuelta: 45, contador: 676
+hola soy 6801, vuelta: 67, contador: 678
+hola soy 6802, vuelta: 46, contador: 678
+hola soy 6801, vuelta: 68, contador: 680
+hola soy 6802, vuelta: 47, contador: 680
+hola soy 6801, vuelta: 69, contador: 682
+hola soy 6802, vuelta: 48, contador: 682
+hola soy 6801, vuelta: 70, contador: 684
+hola soy 6802, vuelta: 49, contador: 684
+hola soy 6801, vuelta: 71, contador: 686
+hola soy 6802, vuelta: 50, contador: 686
+hola soy 6801, vuelta: 72, contador: 688
+hola soy 6802, vuelta: 51, contador: 688
+hola soy 6801, vuelta: 73, contador: 690
+hola soy 6802, vuelta: 52, contador: 690
+hola soy 6801, vuelta: 74, contador: 692
+hola soy 6802, vuelta: 53, contador: 692
+hola soy 6801, vuelta: 75, contador: 694
+hola soy 6802, vuelta: 54, contador: 694
+hola soy 6801, vuelta: 76, contador: 696
+hola soy 6802, vuelta: 55, contador: 696
+hola soy 6801, vuelta: 77, contador: 698
+hola soy 6802, vuelta: 56, contador: 698
+hola soy 6801, vuelta: 78, contador: 700
+hola soy 6802, vuelta: 57, contador: 700
+hola soy 6801, vuelta: 79, contador: 702
+hola soy 6802, vuelta: 58, contador: 702
+hola soy 6801, vuelta: 80, contador: 704
+hola soy 6802, vuelta: 59, contador: 704
+hola soy 6801, vuelta: 81, contador: 706
+hola soy 6802, vuelta: 60, contador: 706
+hola soy 6801, vuelta: 82, contador: 708
+hola soy 6802, vuelta: 61, contador: 708
+hola soy 6801, vuelta: 83, contador: 710
+hola soy 6802, vuelta: 62, contador: 710
+hola soy 6801, vuelta: 84, contador: 712
+hola soy 6802, vuelta: 63, contador: 712
+hola soy 6801, vuelta: 85, contador: 714
+hola soy 6802, vuelta: 64, contador: 714
+hola soy 6801, vuelta: 86, contador: 716
+hola soy 6802, vuelta: 65, contador: 716
+hola soy 6801, vuelta: 87, contador: 718
+hola soy 6802, vuelta: 66, contador: 718
+hola soy 6801, vuelta: 88, contador: 720
+hola soy 6802, vuelta: 67, contador: 720
+hola soy 6801, vuelta: 89, contador: 722
+hola soy 6802, vuelta: 68, contador: 722
+hola soy 6801, vuelta: 90, contador: 724
+hola soy 6802, vuelta: 69, contador: 724
+hola soy 6801, vuelta: 91, contador: 726
+hola soy 6802, vuelta: 70, contador: 726
+hola soy 6801, vuelta: 92, contador: 727
+hola soy 6802, vuelta: 71, contador: 728
+hola soy 6801, vuelta: 93, contador: 729
+hola soy 6802, vuelta: 72, contador: 730
+hola soy 6801, vuelta: 94, contador: 731
+hola soy 6801, vuelta: 95, contador: 733
+hola soy 6802, vuelta: 73, contador: 733
+hola soy 6801, vuelta: 96, contador: 734
+hola soy 6802, vuelta: 74, contador: 735
+hola soy 6801, vuelta: 97, contador: 736
+hola soy 6802, vuelta: 75, contador: 737
+hola soy 6801, vuelta: 98, contador: 738
+hola soy 6802, vuelta: 76, contador: 740
+hola soy 6801, vuelta: 99, contador: 740
+hola soy 6802, vuelta: 77, contador: 741
+hola soy 6802, vuelta: 78, contador: 742
+hola soy 6802, vuelta: 79, contador: 743
+hola soy 6802, vuelta: 80, contador: 744
+hola soy 6802, vuelta: 81, contador: 745
+hola soy 6802, vuelta: 82, contador: 746
+hola soy 6802, vuelta: 83, contador: 747
+hola soy 6802, vuelta: 84, contador: 748
+hola soy 6802, vuelta: 85, contador: 749
+hola soy 6802, vuelta: 86, contador: 750
+hola soy 6802, vuelta: 87, contador: 751
+hola soy 6802, vuelta: 88, contador: 752
+hola soy 6802, vuelta: 89, contador: 753
+hola soy 6802, vuelta: 90, contador: 754
+hola soy 6802, vuelta: 91, contador: 755
+hola soy 6802, vuelta: 92, contador: 756
+hola soy 6802, vuelta: 93, contador: 757
+hola soy 6802, vuelta: 94, contador: 758
+hola soy 6802, vuelta: 95, contador: 759
+hola soy 6802, vuelta: 96, contador: 760
+hola soy 6802, vuelta: 97, contador: 761
+hola soy 6802, vuelta: 98, contador: 762
+hola soy 6802, vuelta: 99, contador: 763
+adios
+Valor final del contador 763
+fin
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 2_procesos.py
+[?2004lProcess ana_0:
+Process ana_1:
+Process ana_2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+NameError: name 'currante_process' is not defined
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+NameError: name 'currante_process' is not defined
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+NameError: name 'currante_process' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 24, in <module>
+    q.Process(target=g)
+NameError: name 'q' is not defined
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ emc[Kacs 2_procesos.py
+[?2004l^C[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ emacs 2_procesos.py[2@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lfin
+adios
+Process ana_0:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+NameError: name 'currante_process' is not defined
+Process ana_1:
+Process ana_2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+NameError: name 'currante_process' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/Documentos/PRPA-Practicas/multiprocessing/2_procesos.py", line 9, in f
+    print (f"hola soy {currante_process().name}, " + \
+NameError: name 'currante_process' is not defined
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 2_procesos.py[2Pemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ python3 2_procesos.py
+[?2004lhola soy ana_0, 7084, True, vuelta 0
+hola soy ana_1, 7085, True, vuelta 0
+fin
+hola soy ana_2, 7086, True, vuelta 0
+adios
+hola soy ana_0, 7084, True, vuelta 1
+hola soy ana_1, 7085, True, vuelta 1
+hola soy ana_0, 7084, True, vuelta 2
+hola soy ana_1, 7085, True, vuelta 2
+hola soy ana_2, 7086, True, vuelta 1
+hola soy ana_0, 7084, True, vuelta 3
+hola soy ana_2, 7086, True, vuelta 2
+hola soy ana_0, 7084, True, vuelta 4
+hola soy ana_1, 7085, True, vuelta 3
+hola soy ana_2, 7086, True, vuelta 3
+hola soy ana_1, 7085, True, vuelta 4
+hola soy ana_2, 7086, True, vuelta 4
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git add 3_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git add 4_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git commit -m "3 y 4"
+[?2004l[main 8838ca8] 3 y 4
+ 2 files changed, 54 insertions(+)
+ create mode 100644 multiprocessing/3_procesos.py
+ create mode 100644 multiprocessing/4_procesos.py
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git push
+[?2004lTo github.com:rodelanu/PRPA-Practicas.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:rodelanu/PRPA-Practicas.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git add 2_procesos.py
+[?2004l[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git add 2_procesos.pypush[Kcommit -m "3 y 4"
+[?2004l[main d1bc512] 3 y 4
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ git commit -[K[K[K[K[K[K[K[K[K[K[K[Kgit push
+[?2004lTo github.com:rodelanu/PRPA-Practicas.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:rodelanu/PRPA-Practicas.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;ubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC: ~/Documentos/PRPA-Practicas/multiprocessing[01;32mubuntu@ubuntu-Vivobook-ASUSLaptop-X3500PC-K3500PC[00m:[01;34m~/Documentos/PRPA-Practicas/multiprocessing[00m$ [?2004l
+exit
+
+Script done on 2023-02-02 10:49:33+01:00 [COMMAND_EXIT_CODE="1"]
