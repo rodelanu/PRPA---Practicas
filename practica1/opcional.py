@@ -81,8 +81,8 @@ def merge(storage, global_sem, semaphores, indexes, buffers):
             
             # Obtenemos el valor mínimo de los generados
             temp = []
-            for i in range(len(indexes)):
-                if indexes[i] < len(buffers[i]):
+            for i in range(nprod):
+                if indexes[i] < n:
                     temp.append(buffers[i][indexes[i]])
                 else:
                     temp.append(-1)  
