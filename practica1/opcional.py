@@ -23,30 +23,30 @@ n = 5
 def delay(factor = 3):
     sleep(random.random()/factor)
 
-# Función para obtener el mínimo número de los valores producidos
+# Función para obtener el mínimo valor de entre los producidos
 def get_minimum(lst):
     return min([x for x in lst if x >= 0])
 
 
-# Función para generar los números de un proceso y guardarlo en un buffer local
+# Función para generar los números de un proceso y guardarlos en un buffer local
 def producer(valor, global_sem, local_sem, local_buffer, pos, indexes):
         
-    # valor        -> Value con inicialmente valor -2 -> value
+    # valor        -> Value con inicialmente valor -2 
     # global_sem   -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
-    # local_sem    -> Lock() que controla cuando se ha producido un valor
+    # local_sem    -> Lock() que controla cuando se produce un nuevo valor
     # local_buffer -> Array(n) en el que se guardan los números del proceso
-    # pos          -> entero con el valor de la posición asociada del proceso
-    # indexes      -> Array(nprod) con las posiciones para comparar después
+    # pos          -> valor entero con la posición asociada del proceso
+    # indexes      -> Array(nprod) con las posiciones de los valores a comparar
     
     for i in range(n):
         
-        # Vemos en que proceso esta el programa
+        # Vemos en que proceso de producción está el programa
         print(f"producer {current_process().name} producing")
         
         # Bloqueamos el semáforo del proceso actual y generamos un nuevo valor
         local_sem.acquire()        
         valor.value += random.randint(2,7)
-        delay()
+        delay()  # lo introducimos para que el orden no sea el usual
         
         # Guardamos el valor en el buffer local y bloqueamos global_sem 
         #  para llevar el conteo de los procesos que pueden ser comparados
@@ -56,7 +56,7 @@ def producer(valor, global_sem, local_sem, local_buffer, pos, indexes):
             
         # Indicamos que se ha producido un nuevo valor en el proceso
         print (f"producer {current_process().name} produced {valor.value}")
-        delay()
+        delay()  # igual que el delay anterior, además podemos pasar a merge
         
 
 # Función para consumir los números generados y guardarlos en el almacén
@@ -64,8 +64,8 @@ def merge(storage, global_sem, semaphores, indexes, buffers):
     
     # storage    -> Array de tamaño n*nprod para guardar los productos ordenados
     # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
-    # semaphores -> lista de los semáforos locales, de tipo BoundedSemaphore(nprod)
-    # indexes    -> Array(nprod) con las posiciones para comparar después
+    # semaphores -> lista de los semáforos locales, de tipo BoundedSemaphore(n)
+    # indexes    -> Array(nprod) con las posiciones de los valores a comparar
     # buffers    -> lista de los buffers locales, de tipo Array(n) 
      
     merge_index = 0   # índice en el que se guardara el siguiente valor
@@ -78,20 +78,26 @@ def merge(storage, global_sem, semaphores, indexes, buffers):
             # Si todos los procesos han terminado se acaba el bucle
             if ended.get_value() == 0:
                 break
-                      
-            temp = [alm[i] if i<len(alm) else -1 for alm, i in zip(buffers, indexes)]            
+            
+            # Obtenemos el valor mínimo de los generados
+            temp = []
+            for i in range(len(indexes)):
+                if indexes[i] < len(buffers[i]):
+                    temp.append(buffers[i][indexes[i]])
+                else:
+                    temp.append(-1)  
+                    
             minimo = get_minimum(temp[:]) 
             print("temp:", temp[:]) 
             print("minimum: ", minimo)                 
             
-            # Aunque cambiamos variables globales, al estar el resto de procesos
-            #  bloqueados con Lock's no es necesasrio proteger la sección crítica
-            pos = temp[:].index(minimo)
+            # Guardamos el valor mínimo y aumentamos la posición de guardado en el almacén  
             storage[merge_index] = minimo            
             print("storage: ", storage[:])
             merge_index += 1
             
-            # Marcamos el espacio del almacén como consumido y avanzamos la posición
+            # Marcamos el espacio del almacén como consumido y avanzamos en la posición del buffer local
+            pos = temp[:].index(minimo)
             buffers[pos][indexes[pos]] = -1
             indexes[pos] += 1                    
             
@@ -103,14 +109,14 @@ def merge(storage, global_sem, semaphores, indexes, buffers):
             elif buffers[pos][indexes[pos]] == -2:
                 global_sem.release() 
         
-        # Si algún proceso no ha generado un valor, se duerme darle la opción
+        # Si algún proceso no ha generado un valor, se duerme para que lo haga
         else:
             sleep(0.1)
            
 
         
 def main():
-    storage = Array('i', n * nprod)
+    storage = Array('i', n*nprod)
     global_sem = BoundedSemaphore(nprod)
     indexes = Array('i', nprod)
     
