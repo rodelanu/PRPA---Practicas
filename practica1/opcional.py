@@ -2,9 +2,7 @@
 # Realizado por: Rodrigo de la Nuez Moraleda
 
 """
-
 Cada proceso tendrá un buffer de tamaño fijo para poner los valores generados.
-
 """
 
 
