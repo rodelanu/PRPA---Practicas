@@ -109,7 +109,7 @@ def merge(storage, global_sem, semaphores, indexes, buffers):
         
         # Si algún proceso no ha generado un valor, se duerme para que lo haga
         else:
-            sleep(0.1)
+            delay()
            
 
         
