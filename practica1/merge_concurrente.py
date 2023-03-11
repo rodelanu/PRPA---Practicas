@@ -1,7 +1,21 @@
 
-# Práctica 1. Merge concurrente
+# Realizado por: Rodrigo de la Nuez Moraleda
 
-# Realizado por: Rodrigo de la Nuez Moraleda 
+"""
+
+Dados nprod procesos que producen números no negativos de forma creciente.
+Cuando un proceso acaba de producir, produce un -1.
+Cada proceso almacena el valor almacenado en una variable compartida consumidor,
+ un -2 indica que el almacén está vacío.
+ 
+Hay un proceso merge que debe tomarm los números y almacenarlos de forma creciente
+ en una única lista (o array). El proceso debe esparar a que los productores
+ tengan listo un elemento e introducir el menor de ellos.
+ 
+Se debe crear listas de semáforos. Cada productor solo maneja sus semáforos para
+ sus datos. El proceso merge debe manejar todos los semáforors.
+
+"""
 
 
 from multiprocessing import Process
@@ -12,104 +26,113 @@ from multiprocessing import Value, Array
 from time import sleep
 import random
 
-nprod = 3  # número de procesos
-n = 5      # número de productos por proceso
+nprod = 3
+n = 5
 
-# Función para buscar el mínimo de una lista cuando este sea mayor o igual que 0
-def find_minimum(lst):
+# Función para 'dormir'/detener el proceso actual durante un tiempo aleatorio
+def delay(factor = 3):
+    sleep(random.random()/factor)
+
+# Función para obtener el mínimo número de los valores producidos
+def get_minimum(lst):
     return min([x for x in lst if x >= 0])
 
 
-# value -> Value con inicialmente valor -2, indica el número producidoç
-# global_sem -> BoundedSemaphore(nprod) que indica el número de procesos que 
-#                están esperando a ser consumidos tras haber producido
-
-# semaphore -> Lock() asociado a un proceso, controla cuando ha producido
-# index -> Value con la posición del proceso en el que vamos a hacer cambios
-# temp -> Array de temaño nprod, guardamos los números que serán comparados en 'merge'
-# terminate -> BoundedSemaphore(nprod) que indica el número de procesos que han terminado
-
-def producer(value, global_sem, semaphore, index, temp, terminate):
+# Función para generar los números de un proceso productor
+def producer(valor, global_sem, local_sem, pos, temp, ended):
+    
+    # valor      -> Value con inicialmente valor -2 -> value
+    # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
+    # local_sem  -> Lock() que controla cuando se ha producido un valor
+    # pos        -> entero con el valor de la posición asociada del proceso
+    # temp       -> Array de temaño el número de procesos para la comparación
+    # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
+    
     for _ in range(n):
         
-        # Vemos en que proceso se está produciendo el número
-        print(f"producer {current_process().name} produciendo")
+        # Vemos en que proceso esta el programa
+        print(f"producer {current_process().name} producing")
         
         # Bloqueamos el semáforo del proceso actual y actualizamos el valor
-        semaphore.acquire()
-        value.value += random.randint(2,5)
+        local_sem.acquire()
+        valor.value += random.randint(2,7)
+        delay()  # lo introducimos para que el orden no sea el usual
         
-        # Guardamos el valor en la posición correspondiente para comparar después
-        temp[index.value] = value.value
-        index.value += 1
+        # Guardamos el valor en la posición correspondiente para comparar luego
+        temp[pos] = valor.value
         global_sem.acquire()
-        
-        # Indicamos que se ha guardado el valor en el Array 'temp'
-        print (f"producer {current_process().name} almacenado {value.value}")
+        print(f"producer {current_process().name} produced {valor.value}")
+        delay()  # igual que el delay anterior, además podemos pasar a consumer
     
-    # Al producir todos los números asginamos el valor a (-1) y bloqueamos el Lock()
-    semaphore.acquire()
-    terminate.acquire()
-    value.value = -1
-    temp[index.value] = -1
-    global_sem.acquire()
-    
+    # Al producir todos los números asignamos el valor a (-1) y bloqueamos ended
+    local_sem.acquire()
+    ended.acquire() 
+    valor.value = -1   
+    temp[pos] = valor.value    
+    global_sem.acquire()   
     
 
-# buffer -> Array de tamaño n * nprod en el que guardaremos los valores producidos
-        
-def merge(buffer, global_sem, semaphores, temp, index, terminate):
+# Función para consumir los números generados y guardarlos en el almacén        
+def merge(storage, global_sem, semaphores, temp, ended):
     
-    # Creamos un índice para saber donde guardar en el almacén
-    merge_index = 0
+    # storage -> Array de tamaño n*nprod para guardar los productos ordenados
+    # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
+    # semaphores -> lista de los semáforos locales, de tipo Lock()
+    # temp       -> Array de temaño el número de procesos para la comparación
+    # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
     
+    merge_index = 0  # índice en el que se guardara el siguiente valor    
     while True:
         
-        # Miramos el semáforo global para ver si todos los procesos han producido
+        # Comprobamos si todos los procesos tienen algún valor generado
         if global_sem.get_value() == 0:
             
-            # Si todos los procesos han terminado salimos del bucle
-            if terminate.get_value() == 0:
+            # Si todos los procesos han terminado se acaba el bucle
+            if ended.get_value() == 0:
                 break
             
-            # Encontramos el mínimo y lo añadimos al buffer, y actualizamos
-            #  el índice para que ese proceso sea el próximo que genere un valor
-            minimo = find_minimum(temp[:])
-            print("El mínimo de la lista temp es:" , minimo)
-            index.value = temp[:].index(minimo)
+            minimo = get_minimum(temp[:])
+            print("temp: ", temp[:])
+            print("minimum: ", minimo)
             
-            buffer[merge_index] = minimo
+            # Aunque cambiamos variables globales, al estar el resto de procesos
+            #  bloqueados con Lock's no es necesasrio proteger la sección crítica
+            pos = temp[:].index(minimo)         
+            storage[merge_index] = minimo
+            print("storage: ", storage[:])
             merge_index += 1
             
-            semaphores[index.value].release()
-            print("comparación actual:", temp[:])
-            print("almacen por el momento", buffer[:])
+            semaphores[pos].release()  # liberamos el proceso del mínimo valor
             
-            # Liberamos un espacio en el semáforo global
+            # liberamos un espacio del semáforo global asegurándonos así que
+            #  no se hagan dos iteraciones de este condicional
             global_sem.release()
         
-        # Si hay procesos que no han producido esperamos para que tomen el control
+        # Si algún proceso no ha generado un valor, se duerme darle la opción
         else:
-            sleep(0.1)
+            delay()
         
 def main():
-    buffer = Array('i', n * nprod)
+    storage = Array('i', n * nprod)
     global_sem = BoundedSemaphore(nprod)
     temp = Array('i', nprod)    
-    index = Value('i', 0)
     
     for i in range(nprod):
         temp[i] = -2
         
     for i in range(n * nprod):
-        buffer[i] = -2
+        storage[i] = -2
         
     values = [Value('i', -2) for _ in range(nprod)]
     semaphores = [Lock() for _ in range(nprod)]
     terminate = BoundedSemaphore(nprod)
     
-    procesos = [Process(target=producer, name=f'p_{i}', args=(values[i], global_sem, semaphores[i], index, temp, terminate)) for i in range(nprod)]
-    merge_process = Process(target=merge, args=(buffer, global_sem, semaphores, temp, index, terminate))
+    procesos = [Process(target = producer, name = f'p_{i}', 
+                        args = (values[i], global_sem, semaphores[i], 
+                              i, temp, terminate)) for i in range(nprod)]
+    
+    merge_process = Process(target = merge, 
+                               args = (storage, global_sem, semaphores, temp, terminate))
     
     for p in procesos:
         p.start()
@@ -119,7 +142,7 @@ def main():
         p.join()
     merge_process.join()
     
-    print("almacen final", buffer[:])
     
 if __name__ == "__main__":
     main()
+    
