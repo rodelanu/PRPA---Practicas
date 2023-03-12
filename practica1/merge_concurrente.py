@@ -107,8 +107,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended, mutex):
         # Obtenemos el valor mínimo de los generados
         mutex.acquire()
         minimo = get_minimum(temp[:])
-        print("temp: ", temp[:])
-        print("minimum: ", minimo)
+        print("comparando: ", temp[:])
             
         # Guardamos el valor mínimo y aumentamos la posición de guardado                   
         storage[merge_index] = minimo
