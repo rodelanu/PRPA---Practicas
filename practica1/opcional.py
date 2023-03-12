@@ -30,11 +30,11 @@ def get_minimum(lst):
 def producer(valor, non_empty, buffer, pos, indexes, mutex):
     
     # valor        -> Value con inicialmente valor -2 
-    # non_empty    -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
+    # non_empty    -> Semaphore(0) para el nº de procesos ejecutados
     # buffer       -> Array(n) en el que se guardan los números del proceso
     # pos          -> valor entero con la posición asociada del proceso
     # indexes      -> Array(nprod) con las posiciones de los valores a comparar
-    # mutex      -> Lock() para que solamente una sección crítica se ejecute
+    # mutex        -> Lock() para que solamente una sección crítica se ejecute
     
     for i in range(n):
         
@@ -49,7 +49,7 @@ def producer(valor, non_empty, buffer, pos, indexes, mutex):
         buffer[i] = valor.value  # guardamos el valor en el buffer local
         mutex.release()
         
-        non_empty.release() # bloqueamos global_sem 
+        non_empty.release()
         print (f"producer {current_process().name} produced {valor.value}")
         
 
@@ -57,8 +57,8 @@ def producer(valor, non_empty, buffer, pos, indexes, mutex):
 def merge(storage, semaphores, indexes, buffers, mutex):
     
     # storage    -> Array de tamaño n*nprod para guardar los productos ordenados
-    # semaphores -> lista de los semáforos locales, de tipo BoundedSemaphore(n)
-    # indexes    -> Array(nprod) con las posiciones de los valores a comparar
+    # semaphores -> lista de los semáforos locales 'non_empty'
+    # indexes    -> Array(nprod) con las posiciones de los valores de cada proceso
     # buffers    -> lista de los buffers locales, de tipo Array(n) 
     # mutex      -> Lock() para que solamente una sección crítica se ejecute
      

@@ -44,7 +44,7 @@ def producer(valor, empty, non_empty, pos, temp, ended, mutex):
     # valor      -> Value con inicialmente valor -2 
     # empty      -> Lock() que controla cuando se produce un nuevo valor
     # non_empty  -> Semaphore(0) que controla que se haya producido un valor
-    # pos        -> valor entero con la posición asociada del proceso
+    # pos        -> valor entero con la posición asociada al proceso
     # temp       -> Array de tamaño el número de procesos para la comparación
     # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
     # mutex      -> Lock() para que solamente una sección crítica se ejecute
@@ -87,7 +87,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended, mutex):
     # storage              -> Array(n*nprod) para guardar los productos ordenados
     # empty_semaphores     -> lista de los semáforos locales 'empty'
     # non_empty_semaphores -> lista de los semáforos locales 'non_empty'
-    # temp                 -> Array(nprod) para la comparación
+    # temp                 -> Array(nprod) para la comparación de valores
     # ended                -> BoundedSemaphore(nprod) para procesos terminados
     
     merge_index = 0  # índice en el que se guardara el siguiente valor    
