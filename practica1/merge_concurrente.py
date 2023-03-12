@@ -90,7 +90,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended, mutex):
     # temp                 -> Array(nprod) para la comparación de valores
     # ended                -> BoundedSemaphore(nprod) para procesos terminados
     
-    merge_index = 0  # índice en el que se guardara el siguiente valor    
+    merge_index = 0  # índice en el que se guardará el siguiente valor    
     lst = range(nprod)
     
     while True:
