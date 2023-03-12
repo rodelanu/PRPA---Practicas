@@ -30,7 +30,7 @@ def get_minimum(lst):
 def producer(valor, empty, non_empty, buffer, pos, indexes, mutex):
     
     # valor        -> Value con inicialmente valor -2 
-    # emtpy
+    # emtpy        -> Lock() que controla cuando se produce un nuevo valor
     # non_empty    -> Semaphore(0) para el nº de procesos ejecutados
     # buffer       -> Array(n) en el que se guardan los números del proceso
     # pos          -> valor entero con la posición asociada del proceso
