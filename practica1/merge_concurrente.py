@@ -60,7 +60,7 @@ def producer(valor, empty, non_empty, pos, temp, ended, mutex):
         
         mutex.acquire()
         valor.value += random.randint(2,7)
-        delay()  # lo introducimos para que el orden no sea el usual       
+        delay()       
         temp[pos] = valor.value  # guardamos el valor para comparar luego
         mutex.release()
         
