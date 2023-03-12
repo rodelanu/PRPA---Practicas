@@ -73,7 +73,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, indexes, buffers, mut
     # Comprobamos que todos los procesos han producido al menos un valor
     for i in lst:
         non_empty_semaphores[i].acquire()
-    
+        
     # Liberamos los anteriores semáforos para devolverlos a sus estados originales
     for i in lst:
         non_empty_semaphores[i].release()
@@ -85,21 +85,20 @@ def merge(storage, empty_semaphores, non_empty_semaphores, indexes, buffers, mut
             break
                 
         # Obtenemos el valor mínimo de los generados
-        
+        mutex.acquire()
         temp = []
         for i in range(nprod):
             if indexes[i] < n:
                 temp.append(buffers[i][indexes[i]])
             else:
                 temp.append(-1)  
-                    
+        
         minimo = get_minimum(temp[:]) 
         pos = temp[:].index(minimo)
         print("comparando: ", temp[:])  
         empty_semaphores[pos].release()              
             
         # Guardamos el valor mínimo y aumentamos la posición de guardado en el almacén  
-        mutex.acquire()
         storage[merge_index] = minimo            
         print("storage: ", storage[:])
         merge_index += 1
