@@ -27,14 +27,12 @@ def get_minimum(lst):
 
 
 # Función para generar los números de un proceso y guardarlos en un buffer local
-def producer(valor, empty, non_empty, buffer, pos, indexes, mutex):
+def producer(valor, empty, non_empty, buffer, mutex):
     
     # valor        -> Value con inicialmente valor -2 
     # empty        -> Lock() que controla cuando se produce un nuevo valor
     # non_empty    -> Semaphore(0) para el nº de procesos ejecutados
     # buffer       -> Array(n) en el que se guardan los números del proceso
-    # pos          -> valor entero con la posición asociada del proceso
-    # indexes      -> Array(nprod) con las posiciones de los valores a comparar
     # mutex        -> Lock() para que solamente una sección crítica se ejecute
     
     for i in range(n):
@@ -139,7 +137,7 @@ def main():
     mutex = Lock()
     procesos = [Process(target = producer, name = f'p_{i}', 
                         args=(values[i], empty_semaphores[i], non_empty_semaphores[i], 
-                              buffers[i], i, indexes, mutex)) for i in range(nprod)]
+                              buffers[i], mutex)) for i in range(nprod)]
     
     
     merge_process = Process(target = merge, name = 'merger',
