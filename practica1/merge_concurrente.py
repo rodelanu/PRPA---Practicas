@@ -42,8 +42,8 @@ def get_minimum(lst):
 def producer(valor, empty, non_empty, pos, temp, ended):
     
     # valor      -> Value con inicialmente valor -2 
-    # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
-    # local_sem  -> Lock() que controla cuando se produce un nuevo valor
+    # empty      -> Lock() que controla cuando se produce un nuevo valor
+    # non_empty  -> Semaphore(0) que controla que se haya producido un valor
     # pos        -> valor entero con la posición asociada del proceso
     # temp       -> Array de tamaño el número de procesos para la comparación
     # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
@@ -76,8 +76,8 @@ def producer(valor, empty, non_empty, pos, temp, ended):
 def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended):
     
     # storage    -> Array de tamaño n*nprod para guardar los productos ordenados
-    # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
-    # semaphores -> lista de los semáforos locales, de tipo Lock()
+    # empty_semaphores -> lista de los semáforos locales 'empty'
+    # non_empty_semaphores -> lista de los semáforos locales 'non_empty'
     # temp       -> Array de tamaño el número de procesos para la comparación
     # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
     
