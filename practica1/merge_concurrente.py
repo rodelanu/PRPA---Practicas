@@ -19,7 +19,7 @@ Se debe crear listas de semáforos. Cada productor solo maneja sus semáforos pa
 
 
 from multiprocessing import Process
-from multiprocessing import BoundedSemaphore, Lock
+from multiprocessing import Semaphore, BoundedSemaphore, Lock
 from multiprocessing import current_process
 from multiprocessing import Value, Array
 
@@ -39,7 +39,7 @@ def get_minimum(lst):
 
 
 # Función para generar los números de un proceso de producción
-def producer(valor, global_sem, local_sem, pos, temp, ended):
+def producer(valor, empty, non_empty, pos, temp, ended):
     
     # valor      -> Value con inicialmente valor -2 
     # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
@@ -54,26 +54,26 @@ def producer(valor, global_sem, local_sem, pos, temp, ended):
         print(f"producer {current_process().name} producing")
         
         # Bloqueamos el semáforo del proceso actual y actualizamos el valor
-        local_sem.acquire()
+        empty.acquire()
         valor.value += random.randint(2,7)
         delay()  # lo introducimos para que el orden no sea el usual
         
         # Guardamos el valor en la posición correspondiente para comparar luego
         temp[pos] = valor.value
-        global_sem.acquire()
+        non_empty.release()
         print(f"producer {current_process().name} produced {valor.value}")
         delay()  # igual que el delay anterior, además podemos pasar a merge
     
     # Al producir todos los números asignamos el valor a -1 y bloqueamos ended
-    local_sem.acquire()
+    empty.acquire()
     ended.acquire() 
     valor.value = -1   
     temp[pos] = valor.value    
-    global_sem.acquire()   
+    non_empty.release()   
     
 
 # Función para consumir los números generados y guardarlos en el almacén        
-def merge(storage, global_sem, semaphores, temp, ended):
+def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended):
     
     # storage    -> Array de tamaño n*nprod para guardar los productos ordenados
     # global_sem -> BoundedSemaphore(nprod) para el nº de procesos ejecutados
@@ -82,39 +82,34 @@ def merge(storage, global_sem, semaphores, temp, ended):
     # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
     
     merge_index = 0  # índice en el que se guardara el siguiente valor    
+    lst = range(nprod)
+    
     while True:
         
-        # Comprobamos si todos los procesos tienen algún valor generado
-        if global_sem.get_value() == 0:
+        for i in lst:
+            non_empty_semaphores[i].acquire()
             
-            # Si todos los procesos han terminado se acaba el bucle
-            if ended.get_value() == 0:
-                break
+        # Si todos los procesos han terminado se acaba el bucle
+        if ended.get_value() == 0:
+            break
             
-            # Obtenemos el valor mínimo de los generados
-            minimo = get_minimum(temp[:])
-            print("temp: ", temp[:])
-            print("minimum: ", minimo)
+        # Obtenemos el valor mínimo de los generados
+        minimo = get_minimum(temp[:])
+        print("temp: ", temp[:])
+        print("minimum: ", minimo)
             
-            # Guardamos el valor mínimo y aumentamos la posición de guardado                   
-            storage[merge_index] = minimo
-            print("storage: ", storage[:])
-            merge_index += 1
+        # Guardamos el valor mínimo y aumentamos la posición de guardado                   
+        storage[merge_index] = minimo
+        print("storage: ", storage[:])
+        merge_index += 1
             
-            pos = temp[:].index(minimo) 
-            semaphores[pos].release()  # liberamos el proceso del mínimo valor
-            
-            # Liberamos un espacio del semáforo global asegurándonos así que
-            #  no se hagan dos iteraciones consecutivas de este condicional
-            global_sem.release()
-        
-        # Si algún proceso no ha generado un valor, se duerme para que lo haga
-        else:
-            delay()
+        pos = temp[:].index(minimo) 
+        empty_semaphores[pos].release()  # liberamos el proceso del mínimo valor
+        lst = [pos]
+
         
 def main():
     storage = Array('i', n*nprod)
-    global_sem = BoundedSemaphore(nprod)
     temp = Array('i', nprod)    
     
     for i in range(nprod):
@@ -124,15 +119,16 @@ def main():
         storage[i] = -2
         
     values = [Value('i', -2) for _ in range(nprod)]
-    semaphores = [Lock() for _ in range(nprod)]
-    terminate = BoundedSemaphore(nprod)
+    empty_semaphores = [Lock() for _ in range(nprod)]
+    non_empty_semaphores = [Semaphore(0) for _ in range(nprod)]
+    ended = BoundedSemaphore(nprod)
     
     procesos = [Process(target = producer, name = f'p_{i}', 
-                        args = (values[i], global_sem, semaphores[i], 
-                              i, temp, terminate)) for i in range(nprod)]
+                        args = (values[i], empty_semaphores[i], non_empty_semaphores[i],
+                              i, temp, ended)) for i in range(nprod)]
     
     merge_process = Process(target = merge, 
-                               args = (storage, global_sem, semaphores, temp, terminate))
+                               args = (storage, empty_semaphores, non_empty_semaphores, temp, ended))
     
     for p in procesos:
         p.start()
@@ -145,4 +141,4 @@ def main():
     
 if __name__ == "__main__":
     main()
-    
+       
