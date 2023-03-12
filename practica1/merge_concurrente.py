@@ -39,7 +39,7 @@ def get_minimum(lst):
 
 
 # Función para generar los números de un proceso de producción
-def producer(valor, empty, non_empty, pos, temp, ended):
+def producer(valor, empty, non_empty, pos, temp, ended, mutex):
     
     # valor      -> Value con inicialmente valor -2 
     # empty      -> Lock() que controla cuando se produce un nuevo valor
@@ -47,53 +47,65 @@ def producer(valor, empty, non_empty, pos, temp, ended):
     # pos        -> valor entero con la posición asociada del proceso
     # temp       -> Array de tamaño el número de procesos para la comparación
     # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
+    # mutex      -> Lock() para que solamente una sección crítica se ejecute
     
     for _ in range(n):
         
         # Vemos en que proceso de producción está el programa
-        print(f"producer {current_process().name} producing")
+        print(f"producer {current_process().name} produciendo")
+        delay()
         
         # Bloqueamos el semáforo del proceso actual y actualizamos el valor
         empty.acquire()
-        valor.value += random.randint(2,7)
-        delay()  # lo introducimos para que el orden no sea el usual
         
-        # Guardamos el valor en la posición correspondiente para comparar luego
-        temp[pos] = valor.value
+        mutex.acquire()
+        valor.value += random.randint(2,7)
+        delay()  # lo introducimos para que el orden no sea el usual       
+        temp[pos] = valor.value  # guardamos el valor para comparar luego
+        mutex.release()
+        
         non_empty.release()
-        print(f"producer {current_process().name} produced {valor.value}")
-        delay()  # igual que el delay anterior, además podemos pasar a merge
+        print(f"producer {current_process().name} almacenado {valor.value}")
     
     # Al producir todos los números asignamos el valor a -1 y bloqueamos ended
-    empty.acquire()
-    ended.acquire() 
+    delay()
+    empty.acquire()    
+    ended.acquire()  # indicamos que un proceso ha terminado
+    
+    mutex.acquire()
     valor.value = -1   
-    temp[pos] = valor.value    
+    temp[pos] = valor.value   
+    mutex.release()
+    
     non_empty.release()   
+    print(f"producer {current_process().name} terminado")
     
 
 # Función para consumir los números generados y guardarlos en el almacén        
-def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended):
+def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended, mutex):
     
-    # storage    -> Array de tamaño n*nprod para guardar los productos ordenados
-    # empty_semaphores -> lista de los semáforos locales 'empty'
+    # storage              -> Array(n*nprod) para guardar los productos ordenados
+    # empty_semaphores     -> lista de los semáforos locales 'empty'
     # non_empty_semaphores -> lista de los semáforos locales 'non_empty'
-    # temp       -> Array de tamaño el número de procesos para la comparación
-    # ended      -> BoundedSemaphore(nprod) para el nº de procesos terminados
+    # temp                 -> Array(nprod) para la comparación
+    # ended                -> BoundedSemaphore(nprod) para procesos terminados
     
     merge_index = 0  # índice en el que se guardara el siguiente valor    
     lst = range(nprod)
     
     while True:
         
+        # Esperamos a que todos los procesos tengan un valor 
         for i in lst:
             non_empty_semaphores[i].acquire()
+        print(f"consumer {current_process().name} desalmacenando")
             
         # Si todos los procesos han terminado se acaba el bucle
         if ended.get_value() == 0:
             break
             
         # Obtenemos el valor mínimo de los generados
+        mutex.acquire()
         minimo = get_minimum(temp[:])
         print("temp: ", temp[:])
         print("minimum: ", minimo)
@@ -104,8 +116,12 @@ def merge(storage, empty_semaphores, non_empty_semaphores, temp, ended):
         merge_index += 1
             
         pos = temp[:].index(minimo) 
-        empty_semaphores[pos].release()  # liberamos el proceso del mínimo valor
         lst = [pos]
+        mutex.release()
+        
+        empty_semaphores[pos].release()  # liberamos el proceso del mínimo valor
+        print(f"consumer {current_process().name} consumiendo {minimo}")
+        delay()
 
         
 def main():
@@ -122,13 +138,14 @@ def main():
     empty_semaphores = [Lock() for _ in range(nprod)]
     non_empty_semaphores = [Semaphore(0) for _ in range(nprod)]
     ended = BoundedSemaphore(nprod)
+    mutex = Lock()
     
     procesos = [Process(target = producer, name = f'p_{i}', 
                         args = (values[i], empty_semaphores[i], non_empty_semaphores[i],
-                              i, temp, ended)) for i in range(nprod)]
+                              i, temp, ended, mutex)) for i in range(nprod)]
     
-    merge_process = Process(target = merge, 
-                               args = (storage, empty_semaphores, non_empty_semaphores, temp, ended))
+    merge_process = Process(target = merge, name = 'merger',
+                               args = (storage, empty_semaphores, non_empty_semaphores, temp, ended, mutex))
     
     for p in procesos:
         p.start()
@@ -137,6 +154,8 @@ def main():
     for p in procesos:
         p.join()
     merge_process.join()
+    
+    print("storage final: ", storage[:])
     
     
 if __name__ == "__main__":
