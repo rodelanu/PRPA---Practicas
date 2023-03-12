@@ -40,8 +40,7 @@ def producer(valor, empty, non_empty, buffer, pos, indexes, mutex):
     for i in range(n):
         
         # Vemos en que proceso de producción está el programa
-        print(f"producer {current_process().name} producing")
-        delay()
+        print(f"producer {current_process().name} producing")        
         
         # Bloqueamos el semáforo del proceso actual y generamos un nuevo valor
         empty.acquire()
@@ -54,6 +53,7 @@ def producer(valor, empty, non_empty, buffer, pos, indexes, mutex):
         
         non_empty.release()
         print (f"producer {current_process().name} produced {valor.value}")
+        delay()
         
 
 # Función para consumir los números generados y guardarlos en el almacén
@@ -79,7 +79,8 @@ def merge(storage, empty_semaphores, non_empty_semaphores, indexes, buffers, mut
         non_empty_semaphores[i].release()
     
     while True:
-         
+        
+        
         # Si todos los procesos han terminado se acaba el bucle
         if ended.get_value() == 0:
             break
@@ -91,7 +92,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, indexes, buffers, mut
             if indexes[i] < n:
                 temp.append(buffers[i][indexes[i]])
             else:
-                temp.append(-1)  
+                temp.append(-1) 
         
         minimo = get_minimum(temp[:]) 
         pos = temp[:].index(minimo)
@@ -114,7 +115,7 @@ def merge(storage, empty_semaphores, non_empty_semaphores, indexes, buffers, mut
             
         non_empty_semaphores[pos].acquire()  
         print(f"consumer {current_process().name} consumiendo {minimo}")
-        delay()
+        sleep(0.3)
 
                   
 def main():
