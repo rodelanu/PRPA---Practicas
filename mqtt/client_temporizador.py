@@ -1,6 +1,9 @@
+
+# Realizado por: Rodrigo de la Nuez Moraleda
+
 import paho.mqtt.publish as publish
-import sys
 from time import sleep
+import sys
 
 def main(hostname):
     topic = input('topic? ')

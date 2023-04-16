@@ -11,22 +11,19 @@ def on_connect(mqttc, userdata, flags, rc):
 
 def on_message(mqttc, userdata, msg):
     global startTime, runTime, messages
-    print("MESSAGE:", userdata, msg.topic, msg.qos, msg.payload, msg.retain)
+    print("MESSAGE:", msg.topic, msg.qos, msg.payload, msg.retain)
     subtopic = msg.topic.split("/")[-1]
     value = float(msg.payload.decode("utf-8"))
-    if subtopic in userdata:
-        userdata[subtopic].append(value)
+    if subtopic in subtopics:
+        subtopics[subtopic].append(value)
     else:
-        userdata[subtopic] = [value]
+        subtopics[subtopic] = [value]
         
     messages.append(value)
-    currentTime = time.time()
-    if (currentTime - startTime) > runTime:
-        total(mqttc, userdata, msg)
 
-def total(mqttc, userdata, msg):
-    for subtopic in userdata:
-        minimum, maximum, average = get_stats(userdata[subtopic])
+def total():
+    for subtopic in subtopics:
+        minimum, maximum, average = get_stats(subtopics[subtopic])
         print(f"Subtopic: {subtopic} - Minimum: {minimum} - Maximum: {maximum} - Average: {average}")
     minimum, maximum, average = get_stats(messages)
     print(f"Recuento total - Minimum: {minimum} - Maximum: {maximum} - Average: {average}")
@@ -64,6 +61,8 @@ def main(hostname):
         currentTime = time.time()
         if (currentTime - startTime) > runTime:
             break
+        
+    total()
 
 
 if __name__ == '__main__':
@@ -73,4 +72,5 @@ if __name__ == '__main__':
     startTime = time.time()
     runTime = random.randint(4, 8)
     messages = []
+    subtopics = {}
     main(hostname)

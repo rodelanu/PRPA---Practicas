@@ -3,6 +3,7 @@
 
 from paho.mqtt.client import Client
 import sys
+import math
 
 def on_connect(mqttc, userdata, flags, rc):
     print("CONNECT:", userdata, flags, rc)
@@ -32,7 +33,6 @@ def on_subscribe(mqttc, userdata, mid, granted_qos):
 def on_log(mqttc, userdata, level, string):
     print("LOG", userdata, level, string)
 
-import math
 def is_prime(n):
     if n == 1: return False
     for i in range(2,int(math.sqrt(n))+1):
@@ -54,7 +54,6 @@ def main(hostname):
     mqttc.subscribe('numbers/#')
 
     mqttc.loop_forever()
-
 
 if __name__ == '__main__':
     hostname = 'simba.fdi.ucm.es'

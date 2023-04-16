@@ -1,3 +1,6 @@
+
+# Realizado por: Rodrigo de la Nuez Moraleda
+
 from paho.mqtt.client import Client
 import sys
 
@@ -38,7 +41,6 @@ def main(hostname):
     mqttc.on_log = on_log
 
     mqttc.connect("simba.fdi.ucm.es")
-
     mqttc.subscribe('temperature/t1')
 
     mqttc.loop_forever()
