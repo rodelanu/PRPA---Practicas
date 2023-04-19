@@ -1,7 +1,11 @@
 
 La práctica es la siguiente:
 
-Planteamiento, diseño e implementación de una solución a un problema de análisis de datos utilizando Spark. El dataset sobre el que trabajar será el que proporciona el ayuntamiento de Madrid del uso del sistema de bicicletas de préstamo BICIMAD (https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=d67921bb86e64610VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default). Nosotros hemos estado utilizando, en los ejercicios de clase, datos relativos a un único mes, pero pueden encontrarse los datos entre desde abril de 2017 (https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)), por lo que los análisis pueden ser mucho más amplios. Además de ser un dataset conocido, el modelo subyacente en los datos  son grafos, que son muy naturales matemática y computacionalmente hablando.
+Planteamiento, diseño e implementación de una solución a un problema de análisis de datos utilizando Spark. El dataset sobre el que trabajar será el que proporciona el
+ayuntamiento de Madrid del uso del sistema de bicicletas de préstamo BICIMAD (https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=d67921bb86e64610VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default). 
+Nosotros hemos estado utilizando, en los ejercicios de clase, datos relativos a un único mes, pero pueden encontrarse los datos entre desde abril de 2017 (https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)), 
+por lo que los análisis pueden ser mucho más amplios. Además de ser un dataset conocido, el modelo subyacente en los datos  son grafos, 
+que son muy naturales matemática y computacionalmente hablando.
 
 La práctica se realizará en grupo y el resultado del trabajo constará al menos de:
 
