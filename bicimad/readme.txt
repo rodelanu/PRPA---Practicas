@@ -13,5 +13,5 @@ La práctica se realizará en grupo y el resultado del trabajo constará al meno
 - Diseño e implementación en Spark de la solución al problema propuesto
 - Documento que recoja y explique el problema, el proceso de diseño e implementación de la solución y su aplicación a los resultados.
 - El documento asociado a la práctica tiene un formato libre, puede ser un documento pdf, html, notebook... El objetivo fundamental del mismo es que explique con claridad 
-tanto el problema como la solución al mismo. Algunos aspectos que puede ser interesante tratar en el documento para contribuir a su claridad son: motivación, ejemplos,  
-detalles importantes de la implementación, evaluación de resultados, etc.
+   tanto el problema como la solución al mismo. Algunos aspectos que puede ser interesante tratar en el documento para contribuir a su claridad son: motivación, ejemplos, 
+   detalles importantes de la implementación, evaluación de resultados, etc.
