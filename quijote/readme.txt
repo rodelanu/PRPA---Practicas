@@ -4,6 +4,7 @@ Vamos a hacer un programa que cuente las palabras de un fichero dado, en este ca
 - Con ese programa genera un fichero que se llame quijote_s05.txt.
 - Haz que programa de contar palabras y pruébalo con el fichero quijote_s05.txt. Copia la salida y ponla en un fichero llamado out_quijote_s05.txt.
 - Prueba el programa con el libro completo. Copia la salida en un fichero llamado out_quijote.txt.
+
 - Ahora debes probar el programa en el cluster. Los alumnos cuyo DNI sea par usarán plicluster02 y los que lo tengan impar usarán picluster01. Crea una carpeta word_count en tu directorio del cluster
     1. copia el fichero de datos (quijote.txt) y tu programa en tu directorio home del cluster.
     2. copia el fichero de datos en el sistema de ficheros hdfs
