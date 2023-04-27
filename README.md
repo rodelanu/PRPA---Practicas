@@ -2,7 +2,7 @@
 
 ## practica2
 
-Este fichero contiene los archivos que resuelven el problema del puente de Ambite, que es compartido por peatones y vehículos y no permite el paso de vehículos en sentidos contrarios ni el de personas y automóviles, simultáneamente, por motives de seguridad al no tener suficiente anchura. 
+Este fichero contiene los archivos que resuelven el problema del puente de Ambite, que es compartido por peatones y vehículos y no permite el paso de vehículos en sentidos contrarios ni el de personas y automóviles, simultáneamente, por motivos de seguridad al no tener suficiente anchura. 
 
 Se ha implementado una solución eficiente a este problema utilizando monitores. 
 Todo el desarrollo teórico que justifica el uso de las ideas presentadas en el código, puede encontrarse en el documento PDF del mismo nombre (<desarrollo.pdf>) en el que se ha definido el invariante del monitor solución junto con la demostración de que no presenta problemas de seguridad (exclusión mutua), deadlocks ni inanición.
