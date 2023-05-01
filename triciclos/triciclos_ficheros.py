@@ -36,10 +36,10 @@ def fileToList(file_rdd):
 
 
 # Esta función toma un RDD de nodos y encuentra todos los ciclos de tres nodos en el grafo
-def nodes_to_tricycles(nodes_rdd):
+def graphToTricycles(graph_rdd):
     
     # Creamos la matriz de adyacencia correspondiente al grafo
-    adj_rdd = nodes_rdd.groupByKey()\
+    adj_rdd = graph_rdd.groupByKey()\
                        .mapValues(set)\
                        .mapValues(sorted)\
                        .map(lambda x: 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
         sc = SparkContext()
         filenames = sys.argv[1:]
         txt_rdd = sc.textFile(",".join(filenames))
-        tricycles_rdd = nodes_to_tricycles(fileToList(txt_rdd))
+        tricycles_rdd = graphToTricycles(fileToList(txt_rdd))
         tricycles = tricycles_rdd.collect()
         print(tricycles)
         
